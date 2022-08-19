@@ -1,0 +1,29 @@
+.header {
+    width: 100vw;
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.header .nav .nav-logo {
+    width: 10rem;
+}
+
+.header .nav .nav-list {
+    display: flex;
+    gap: 0.5rem;
+    list-style-type: none;
+}
+
+.header .nav .nav-list .nav-item {
+    font-size: 1.25rem;
+}
+
+.header .nav .nav-list .nav-item .nav-link {
+    text-decoration: none;
+    color: black;
+}
