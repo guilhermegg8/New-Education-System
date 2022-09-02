@@ -105,7 +105,7 @@ function validateLogin() {
         if (login != 'aluno' || password != '12345') {
             alert('Login ou Senha Inválidos')
         } else {
-            form.action = ''
+            form.action = '/matricula'
         }
     })
 }
