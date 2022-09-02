@@ -1,24 +1,44 @@
 import './Login.css'
 
-export default function Login() {
+export default function Login({user}) {
+    const [name, setName] = useState("");
+    const [passWord, setPassWord] = useState("");
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log("Enviando o Formulario");
+        console.log(name, passWord);
+
+        if(name !== 'aluno' || passWord !== '12345'){
+        
+        }else{
+            alert("LOGADO COM SUCESSO");
+            user();
+        }
+    
+        // 7 - limpar formularios 
+        setName("");
+        setEmail("");
+
+    }
     return (
         <div class='container'>
             <div class='form-container'>
                 <div class='signin-signup'>
 
-                    <form action='#' class='sign-in-form' id='form' name='form' onSubmit={validateLogin}>
+                    <form class='sign-in-form' id='form' name='form' onSubmit={handleSubmit}>
                         <h2 class='title'>
                             Login <span>-</span> Aluno
                         </h2>
 
                         <div class='input-field'>
                             <i class='fas fa-user'></i>
-                            <input type='text' placeholder='Usuário' id='login' name='login' required />
+                            <input type='text' placeholder='Usuário' id='login' name='login' required onChange={(e) => setName(e.target.value)}/>
                         </div>
 
                         <div class='input-field'>
                             <i class='fas fa-lock'></i>
-                            <input type='password' placeholder='Senha' id='password' name='password' required />
+                            <input type='password' placeholder='Senha' id='password' name='password' required onChange={(e) => setPassWord(e.target.value)}/>
                         </div>
                         <a class='form-a' href='#'>Esqueceu sua senha?</a>
                         <input type='submit' value='Login' class='btn solid' />
@@ -95,17 +115,17 @@ function modifyLogin() {
     });
 }
 
-function validateLogin() {
-    const form = document.getElementById('form')
+// function validateLogin() {
+//     const form = document.getElementById('form')
 
-    form.addEventListener('submit', function () {
-        const login = document.getElementById('login').value
-        const password = document.getElementById('password').value
+//     form.addEventListener('submit', function () {
+//         const login = document.getElementById('login').value
+//         const password = document.getElementById('password').value
 
-        if (login != 'aluno' || password != '12345') {
-            alert('Login ou Senha Inválidos')
-        } else {
-            form.action = '/matricula'
-        }
-    })
-}
+//         if (login != 'aluno' || password != '12345') {
+//             alert('Login ou Senha Inválidos')
+//         } else {
+//             form.action = '/matricula'
+//         }
+//     })
+// }
