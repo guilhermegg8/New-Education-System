@@ -2,6 +2,8 @@ import './Login.css'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { FaLock, FaUser } from 'react-icons/fa'
+
 export default function Login() {
 
     const navigate = useNavigate();
@@ -55,12 +57,12 @@ export default function Login() {
                         </h2>
 
                         <div className='input-field'>
-                            <i className='fas fa-user'></i>
+                            <FaUser className='icon' />
                             <input type='text' placeholder='Usuário' id='login' name='login' required onChange={handleName} />
                         </div>
 
                         <div className='input-field'>
-                            <i className='fas fa-lock'></i>
+                            <FaLock className='icon' />
                             <input type='password' placeholder='Senha' id='password' name='password' required onChange={(e) => setPassword(e.target.value)} />
                         </div>
                         <a className='form-a' href='#'>Esqueceu sua senha?</a>
@@ -73,14 +75,12 @@ export default function Login() {
                         </h2>
 
                         <div className='input-field'>
-
-                            <i className='fas fa-user'></i>
-                            <input type='text' placeholder='User' />
+                            <FaUser className='icon' />
+                            <input type='text' placeholder='Usuário' />
                         </div>
 
                         <div className='input-field'>
-
-                            <i className='fas fa-lock'></i>
+                            <FaLock className='icon' />
                             <input type='password' placeholder='Senha' />
                         </div>
                         <a className='form-a' href='#'>Esqueceu sua senha?</a>
@@ -107,7 +107,7 @@ export default function Login() {
 
                 <div className='panel right-panel'>
                     <div className='content'>
-                        <h3>É um aluno??</h3>
+                        <h3>É um aluno?</h3>
                         <p>Está do lado errado desse form, só clicar no botão que será levado ao local correto
                         </p>
 
