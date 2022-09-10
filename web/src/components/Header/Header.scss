@@ -1,0 +1,32 @@
+/*===== HEADER AND NAVIGATION =====*/
+header {
+    width: 20rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    .accessibility {
+        background-color: var(--brand-dark);
+        height: 100%;
+        display: grid;
+        align-items: center;
+        padding: 0 0.25rem;
+        place-items: center;
+        z-index: 10;
+
+        .accessibility-link {
+            display: flex;
+
+            &:hover {
+                color: var(--red);
+            }
+
+            .accessibility-icon {
+                font-size: 2rem;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

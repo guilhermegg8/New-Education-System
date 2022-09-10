@@ -1,7 +1,108 @@
+/*===== ROOT VARIABLES =====*/
+:root {
+  --hue: 349;
+  --first-color: hsl(var(--hue), 68%, 45%);
+  --first-color-dark: hsl(var(--hue), 68%, 40%);
+  --brand: hsl(0, 0%, 90%);
+  --brand-medium: hsl(0, 0%, 90%);
+  --brand-dark: hsl(0, 0%, 80%);
+  --brand-light: hsl(0, 0%, 95%);
+  --white: hsl(0, 100%, 100%);
+  --black: hsl(0, 0%, 0%);
+}
+
 /*===== RESET CSS =====*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  background-color: var(--brand-light);
+  align-items: center;
+  color: var(--black);
+}
+body #root {
+  display: flex;
+}
+body a {
+  text-decoration: none;
+  color: var(--black);
+}
+body.dark-theme {
+  /* Dark Theme Variables */
+  --brand: hsl(249, 16%, 15%);
+  --brand-medium: hsl(249, 16%, 16.5%);
+  --brand-dark: hsl(249, 16%, 12%);
+  --brand-light: hsl(249, 15%, 18%);
+  color: var(--white);
+}
+body.dark-theme .nav-logo {
+  content: url(../assets/Logotipo-dark.png);
+}
+body.dark-theme a {
+  color: var(--white);
+}
+body.dark-theme #change-contrast .contrast {
+  border: 2px solid var(--white);
+}
+body.dark-theme #change-contrast .contrast::before {
+  background-color: var(--white);
+}
+body.dark-theme #change-contrast:hover .contrast {
+  border: 2px solid var(--first-color);
+}
+body.dark-theme #change-contrast:hover .contrast::before {
+  background-color: var(--first-color);
+}
+body.body-contrast {
+  /* Constrast Theme Variables */
+  --brand: hsl(0, 0%, 2.5%);
+  --brand-medium: hsl(0, 0%, 3.5%);
+  --brand-dark: hsl(0, 0%, 1.5%);
+  --brand-light: hsl(0, 0%, 10%);
+  background-color: #000;
+  color: var(--white);
+}
+body.body-contrast a {
+  color: #c7c700;
+  text-decoration: underline;
+}
+body.body-contrast .nav-logo {
+  content: url(../assets/Logotipo-contrast.png);
+}
+body.body-contrast #change-contrast:hover .contrast {
+  border: 2px solid #ff0;
+}
+body.body-contrast #change-contrast:hover .contrast::before {
+  background-color: #ff0;
+}
+body.body-contrast .accessibility * {
+  text-decoration: none;
+}
+body.body-contrast #change-theme {
+  display: none;
+}
+body.body-contrast .nav-link-active *,
+body.body-contrast .link-exit,
+body.body-contrast a:hover,
+body.body-contrast a:hover *,
+body.body-contrast .info-test b,
+body.body-contrast .materia {
+  color: #ff0;
+}
+body.body-contrast .content-title-icon,
+body.body-contrast .modal-content-icon,
+body.body-contrast .modal-content-text b {
+  color: #c7c700;
+}
+body.body-contrast .important-announcement {
+  color: var(--white);
+}
+body.body-contrast .modal-button a {
+  background-color: #c7c700;
+  color: var(--white);
 }/*# sourceMappingURL=global.css.map */

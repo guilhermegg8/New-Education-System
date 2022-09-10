@@ -1,29 +1,28 @@
-.header {
-    width: 100vw;
+/*===== HEADER AND NAVIGATION =====*/
+header {
+  width: 20rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
-
-.header .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
+header .accessibility {
+  background-color: var(--brand-dark);
+  height: 100%;
+  display: grid;
+  align-items: center;
+  padding: 0 0.25rem;
+  place-items: center;
+  z-index: 10;
 }
-
-.header .nav .nav-logo {
-    width: 10rem;
+header .accessibility .accessibility-link {
+  display: flex;
 }
-
-.header .nav .nav-list {
-    display: flex;
-    gap: 0.5rem;
-    list-style-type: none;
+header .accessibility .accessibility-link:hover {
+  color: var(--red);
 }
-
-.header .nav .nav-list .nav-item {
-    font-size: 1.25rem;
-}
-
-.header .nav .nav-list .nav-item .nav-link {
-    text-decoration: none;
-    color: black;
-}
+header .accessibility .accessibility-link .accessibility-icon {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=Header.css.map */
