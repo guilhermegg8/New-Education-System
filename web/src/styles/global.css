@@ -1,12 +1,12 @@
 /*===== ROOT VARIABLES =====*/
 :root {
-  --hue: 349;
-  --first-color: hsl(var(--hue), 68%, 45%);
-  --first-color-dark: hsl(var(--hue), 68%, 40%);
-  --brand: hsl(0, 0%, 90%);
-  --brand-medium: hsl(0, 0%, 90%);
-  --brand-dark: hsl(0, 0%, 80%);
-  --brand-light: hsl(0, 0%, 95%);
+  --hue: 216;
+  --first-color-main: hsl(var(--hue), 68%, 45%);
+  --first-color-dark: hsl(var(--hue), 68%, 30%);
+  --theme-main: hsl(0, 0%, 90%);
+  --theme-medium: hsl(0, 0%, 90%);
+  --theme-dark: hsl(0, 0%, 80%);
+  --theme-light: hsl(0, 0%, 95%);
   --white: hsl(0, 100%, 100%);
   --black: hsl(0, 0%, 0%);
 }
@@ -17,92 +17,177 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
 }
 
-body {
-  background-color: var(--brand-light);
+body #root .global {
+  background-color: var(--theme-light);
   align-items: center;
   color: var(--black);
-}
-body #root {
   display: flex;
 }
-body a {
+body #root .global a {
   text-decoration: none;
   color: var(--black);
 }
-body.dark-theme {
+body #root .global.dark-theme {
   /* Dark Theme Variables */
-  --brand: hsl(249, 16%, 15%);
-  --brand-medium: hsl(249, 16%, 16.5%);
-  --brand-dark: hsl(249, 16%, 12%);
-  --brand-light: hsl(249, 15%, 18%);
+  --theme-main: hsl(249, 16%, 20%);
+  --theme-medium: hsl(249, 16%, 21.5%)
+  --theme-dark: hsl(249, 16%, 15%);
+  --theme-light: hsl(249, 15%, 25%);
   color: var(--white);
 }
-body.dark-theme .nav-logo {
+body #root .global.dark-theme .nav-logo {
   content: url(../assets/Logotipo-dark.png);
 }
-body.dark-theme a {
+body #root .global.dark-theme a {
   color: var(--white);
 }
-body.dark-theme #change-contrast .contrast {
+body #root .global.dark-theme #change-contrast .contrast {
   border: 2px solid var(--white);
 }
-body.dark-theme #change-contrast .contrast::before {
+body #root .global.dark-theme #change-contrast .contrast::before {
   background-color: var(--white);
 }
-body.dark-theme #change-contrast:hover .contrast {
-  border: 2px solid var(--first-color);
+body #root .global.dark-theme #change-contrast:hover .contrast {
+  border: 2px solid var(--fc-mainc);
 }
-body.dark-theme #change-contrast:hover .contrast::before {
-  background-color: var(--first-color);
+body #root .global.dark-theme #change-contrast:hover .contrast::before {
+  background-color: var(--fc-main);
 }
-body.body-contrast {
+body #root .global.body-contrast {
   /* Constrast Theme Variables */
-  --brand: hsl(0, 0%, 2.5%);
-  --brand-medium: hsl(0, 0%, 3.5%);
-  --brand-dark: hsl(0, 0%, 1.5%);
-  --brand-light: hsl(0, 0%, 10%);
+  --theme-main: hsl(0, 0%, 2.5%);
+  --theme-dark: hsl(0, 0%, 1.5%);
+  --theme-light: hsl(0, 0%, 10%);
   background-color: #000;
   color: var(--white);
 }
-body.body-contrast a {
+body #root .global.body-contrast a {
   color: #c7c700;
   text-decoration: underline;
 }
-body.body-contrast .nav-logo {
+body #root .global.body-contrast .nav-logo {
   content: url(../assets/Logotipo-contrast.png);
 }
-body.body-contrast #change-contrast:hover .contrast {
+body #root .global.body-contrast #change-contrast:hover .contrast {
   border: 2px solid #ff0;
 }
-body.body-contrast #change-contrast:hover .contrast::before {
+body #root .global.body-contrast #change-contrast:hover .contrast::before {
   background-color: #ff0;
 }
-body.body-contrast .accessibility * {
+body #root .global.body-contrast .accessibility * {
   text-decoration: none;
 }
-body.body-contrast #change-theme {
+body #root .global.body-contrast #change-theme {
   display: none;
 }
-body.body-contrast .nav-link-active *,
-body.body-contrast .link-exit,
-body.body-contrast a:hover,
-body.body-contrast a:hover *,
-body.body-contrast .info-test b,
-body.body-contrast .materia {
+body #root .global.body-contrast .nav-link-active *,
+body #root .global.body-contrast .link-exit,
+body #root .global.body-contrast a:hover,
+body #root .global.body-contrast a:hover *,
+body #root .global.body-contrast .info-test b,
+body #root .global.body-contrast .materia {
   color: #ff0;
 }
-body.body-contrast .content-title-icon,
-body.body-contrast .modal-content-icon,
-body.body-contrast .modal-content-text b {
+body #root .global.body-contrast .content-title-icon,
+body #root .global.body-contrast .modal-content-icon,
+body #root .global.body-contrast .modal-content-text b {
   color: #c7c700;
 }
-body.body-contrast .important-announcement {
+body #root .global.body-contrast .important-announcement {
   color: var(--white);
 }
-body.body-contrast .modal-button a {
+body #root .global.body-contrast .modal-button a {
   background-color: #c7c700;
   color: var(--white);
+}
+
+@media screen and (max-width: 1150px) {
+  body #root .global {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  body #root .global header {
+    width: 100vw;
+    height: 13rem;
+    flex-direction: column;
+    top: 0;
+    z-index: 5;
+    position: fixed;
+    gap: 0;
+  }
+  body #root .global .nav {
+    justify-content: space-between;
+    padding: 0rem 2.5vw;
+    width: 100vw;
+    height: 10rem;
+    background-color: var(--theme-main);
+    flex-direction: row;
+  }
+  body #root .global .nav-logo {
+    width: 9.5rem;
+  }
+  body #root .global .menu-burger {
+    display: block;
+  }
+  body #root .global .change-theme {
+    position: absolute;
+    right: 2.5rem;
+    top: 1rem;
+  }
+  body #root .global .change-theme .link-text {
+    display: none;
+  }
+  body #root .global .accessibility {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    height: 3rem;
+  }
+  body #root .global main {
+    position: relative;
+    margin: 15rem 0 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  body #root .global .nav-logo {
+    width: 8rem;
+  }
+  body #root .global .link-icon {
+    font-size: 1.5rem;
+  }
+  body #root .global .link-text {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 600px) {
+  body #root .global .nav-logo {
+    width: 6.5rem;
+  }
+  body #root .global .menu-burger {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 492px) {
+  body #root .global .nav-logo {
+    width: 4.75rem;
+  }
+  body #root .global .menu-burger {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content-title {
+    font-weight: 600;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content-title-icon {
+    font-size: 2rem;
+    color: var(--first-color-main);
+  }
 }/*# sourceMappingURL=global.css.map */

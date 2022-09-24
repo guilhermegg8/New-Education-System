@@ -1,99 +1,155 @@
-import './Header.css'
+import "./Header.css"
 
-export default function Header() {
+import { FaWheelchair } from "react-icons/fa"
+import { TbLetterA } from "react-icons/tb"
+import { BiPlus, BiMinus, BiSearch } from "react-icons/bi"
+import { RiUserAddLine, RiUserSearchLine } from "react-icons/ri"
+import { AiOutlinePlusCircle, AiFillCloseCircle } from "react-icons/ai"
+import { CgProfile } from "react-icons/cg"
+import { IoIosMenu } from "react-icons/io"
+
+export default function Header({ type }) {
     return (
         <header>
-        <div class="accessibility">
-            <a href="#" class="accessibility-link" title="Acessibilidade">
-                <i class="uil uil-accessible-icon-alt accessibility-icon"></i>
-            </a>
-            <a href="#" id="change-contrast" title="Modo Constraste">
-                <button class="contrast" role="switch" aria-checked="false" id="contrast">
-                </button>
-            </a>
-            <a href="#" class="accessibility-link" id="increase" title="Aumentar Fonte">
-                <i class="uil uil-letter-english-a accessibility-icon"></i>
-                <sup>
-                    <i class="uil uil-plus"></i>
-                </sup>
-            </a>
-            <a href="#" class="accessibility-link" id="decrease" title="Dimunuir Fonte">
-                <i class="uil uil-letter-english-a accessibility-icon"></i>
-                <sup>
-                    <i class="uil uil-minus"></i>
-                </sup>
-            </a>
-        </div>
-        <nav class="nav">
-            <a href="#" class="nav-logo" title="Siga 2.0"></a>
-
-            <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="./matricula.html" class="nav-link nav-link-active" title="Matrícula">
-                            <i class="bi bi-info-circle link-icon"></i>
-                            <span class="link-text">Matrícula</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./consultas.html" class="nav-link" title="Consultas">
-                            <i class="bi bi-search link-icon"></i>
-                            <span class="link-text">Consultas</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./avaliacoes.html" class="nav-link" title="Agenda">
-                            <i class="bi bi-calendar4-event link-icon"></i>
-                            <span class="link-text">Agenda</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" title="Segurança">
-                            <i class="bi bi-shield-check link-icon"></i>
-                            <span class="link-text">Segurança</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./solicitacoes.html" class="nav-link" title="Solicitações">
-                            <i class="bi bi-chat-square-text link-icon"></i>
-                            <span class="link-text">Solicitações</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" title="Upload de Arquivos">
-                            <i class="bi bi-file-earmark-arrow-up link-icon"></i>
-                            <span class="link-text">Upload Arquivos</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./grade.html" class="nav-link" title="Plano de Ensino">
-                            <i class="bi bi-book link-icon"></i>
-                            <span class="link-text">Plano de Ensino</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" title="Matriz Inglês">
-                            <i class="bi bi-folder2-open link-icon"></i>
-                            <span class="link-text">Matriz Inglês</span>
-                        </a>
-                    </li>
-                    <li class="nav-item nav-item-theme">
-                        <a href="#" class="nav-link" id="change-theme" title="Mudar Tema">
-                            <button class="checkbox" role="switch" aria-checked="false" id="checkbox">
-                            </button>
-                            <span class="link-text">Mudar Tema</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav-options">
-                <a href="../index.html" class="nav-link" title="Fazer logout">
-                    <i class="bi bi-x-circle-fill link-icon link-exit"></i>
-                    <span class="link-text">Sair</span>
+            <div className="accessibility">
+                <a href="#" className="accessibility-link" title="Acessibilidade">
+                    <FaWheelchair className="accessibility-icon" />
                 </a>
-                <i class="bi bi-list menu-burger" id="nav-toggle"></i>
+                <a href="#" id="change-contrast" title="Modo Constraste">
+                    <button className="contrast" role="switch" aria-checked="false" id="contrast">
+                    </button>
+                </a>
+                <a href="#" className="accessibility-link" id="increase" title="Aumentar Fonte">
+                    <TbLetterA className="accessibility-icon" />
+                    <sup>
+                        <BiPlus />
+                    </sup>
+                </a>
+                <a href="#" className="accessibility-link" id="decrease" title="Dimunuir Fonte">
+                    <TbLetterA className="accessibility-icon" />
+                    <sup>
+                        <BiMinus />
+                    </sup>
+                </a>
             </div>
-        </nav>
-    </header>
+            <nav className="nav">
+                <img className="nav-logo" title="New Education System" />
+
+                <div className="nav-menu" id="nav-menu">
+                    <ul className="nav-list">
+                        {type === "aluno" ? (
+                            <>
+                                <li className="nav-item">
+                                    <a href="#" className="nav-link nav-link" title="Matrícula">
+                                        <CgProfile className="link-icon" />
+                                        <span className="link-text">Matrícula</span>
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="#" className="nav-link" title="Consultas">
+                                        <i className="bi bi-search link-icon"></i>
+                                        <span className="link-text">Consultas</span>
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="#" className="nav-link" title="Agenda">
+                                        <i className="bi bi-calendar4-event link-icon"></i>
+                                        <span className="link-text">Agenda</span>
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="#" className="nav-link" title="Segurança">
+                                        <i className="bi bi-shield-check link-icon"></i>
+                                        <span className="link-text">Segurança</span>
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="#" className="nav-link" title="Solicitações">
+                                        <i className="bi bi-chat-square-text link-icon"></i>
+                                        <span className="link-text">Solicitações</span>
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="#" className="nav-link" title="Upload de Arquivos">
+                                        <i className="bi bi-file-earmark-arrow-up link-icon"></i>
+                                        <span className="link-text">Upload Arquivos</span>
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="#" className="nav-link" title="Plano de Ensino">
+                                        <i className="bi bi-book link-icon"></i>
+                                        <span className="link-text">Plano de Ensino</span>
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="#" className="nav-link" title="Matriz Inglês">
+                                        <span className="link-text">Matriz Inglês</span>
+                                    </a>
+                                </li>
+                            </>
+                        ) : type === "secretaria" ? (
+                            <>
+                                <li className="nav-item">
+                                    <a href="#" className="nav-link nav-link" title="Matrícula">
+                                        <CgProfile className="link-icon" />
+                                        <span className="link-text">Perfil</span>
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="#" className="nav-link nav-link" title="Matrícula">
+                                        <AiOutlinePlusCircle className="link-icon" />
+                                        <span className="link-text">Cadastrar Funcionário</span>
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="#" className="nav-link nav-link" title="Matrícula">
+                                        <BiSearch className="link-icon" />
+                                        <span className="link-text">Consultar Funcionário</span>
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="#" className="nav-link nav-link" title="Matrícula">
+                                        <RiUserAddLine className="link-icon" />
+                                        <span className="link-text">Cadastrar Aluno</span>
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="#" className="nav-link nav-link" title="Matrícula">
+                                        <RiUserSearchLine className="link-icon" />
+                                        <span className="link-text">Cadastrar Aluno</span>
+                                    </a>
+                                </li>
+                            </>
+                        ) : (
+                            <></>
+                        )}
+                        <li className="nav-item">
+                            <a href="#" className="nav-link change-theme" title="Mudar Tema">
+                                <button className="checkbox" role="switch" aria-checked="false" id="checkbox" onClick={darkTheme}>
+                                </button>
+                                <span className="link-text">Mudar Tema</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div className="nav-options">
+                    <a href="/" className="nav-link" title="Fazer Logout">
+                        <AiFillCloseCircle className="link-icon link-exit" />
+                        <span className="link-text">Sair</span>
+                    </a>
+                    <IoIosMenu className="menu-burger nav-toggle" onClick={showMenu} />
+                </div>
+            </nav>
+        </header>
     )
+}
+
+/*=============== SHOW MENU ===============*/
+const showMenu = () => {
+    const nav = document.querySelector('.nav-menu'),
+        toggle = document.querySelector('.nav-toggle')
+
+    toggle.addEventListener('click', () => {
+        nav.classList.toggle('show-menu')
+    })
 }

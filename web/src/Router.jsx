@@ -1,12 +1,14 @@
 import { Route, Routes } from "react-router-dom"
-import Login from './pages/Login/Login'
-import Matricula from './pages/Matricula/Matricula'
+import Login from './views/Login/Login'
+import Matricula from './views/Estudante/Matricula/Matricula'
+import NovoFuncionario from "./views/Secretaria/NovoFuncionario/NovoFuncionario"
 
 export default function Router() {
     return (
         <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/matricula" element={<Matricula />} />
+            <Route path="/secretaria/novo-funcionario" element={<NovoFuncionario />} />
         </Routes>
     )
 }
