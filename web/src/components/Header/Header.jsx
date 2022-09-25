@@ -1,9 +1,9 @@
 import "./Header.css"
 
-import { FaWheelchair } from "react-icons/fa"
+import { FaTasks, FaWheelchair } from "react-icons/fa"
 import { TbLetterA } from "react-icons/tb"
-import { BiPlus, BiMinus } from "react-icons/bi"
-import { RiUserAddLine, RiUserSearchLine } from "react-icons/ri"
+import { BiPlus, BiMinus, BiBookAdd } from "react-icons/bi"
+import { RiUserAddFill, RiUserAddLine, RiUserFollowLine, RiUserSearchLine } from "react-icons/ri"
 import { AiOutlinePlusCircle, AiFillCloseCircle } from "react-icons/ai"
 import { BsCalendar4, BsShieldCheck, BsChatSquareText, BsArchive, BsSearch, BsInfoCircle, BsBook, BsFolder } from "react-icons/bs"
 
@@ -120,9 +120,50 @@ export default function Header({ type }) {
                                     </a>
                                 </li>
                             </>
-                        ) : (
-                            <></>
-                        )}
+                        ) : type === "professor" ? (
+                            <>
+                            
+                                <li className="nav-item">
+                                        <a href="../../" className="nav-link nav-link" title="Matrícula">
+                                            <BsInfoCircle className="link-icon" />
+                                            <span className="link-text">Perfil</span>
+                                        </a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a href="#" className="nav-link nav-link" title="Matrícula">
+                                        <BsSearch className="link-icon" />
+                                            <span className="link-text">Visualizar Turmas</span>
+                                        </a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a href="#" className="nav-link nav-link" title="Matrícula">
+                                            <BiBookAdd className="link-icon" />
+                                            <span className="link-text">Cadastrar Plano <br /> de Aula</span>
+                                        </a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a href="#" className="nav-link nav-link" title="Matrícula">
+                                        <AiOutlinePlusCircle className="link-icon" />
+                                            <span className="link-text">Cadastrar Nota</span>
+                                        </a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a href="#" className="nav-link nav-link" title="Matrícula">
+                                            <RiUserFollowLine className="link-icon"/>
+                                            <span className="link-text">Cadastrar Presença</span>
+                                        </a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a href="#" className="nav-link nav-link" title="Matrícula"> 
+                                            <FaTasks className="link-icon"/>
+                                            <span className="link-text">Adicionar Tarefas</span>
+                                        </a>
+                                    </li>
+                            
+                            
+                            
+                            </>
+                        ) : ( <></>) }
                         <li className="nav-item">
                             <a href="#" className="nav-link change-theme" title="Mudar Tema">
                                 <button className="checkbox" role="switch" aria-checked="false" onClick={darkTheme} />

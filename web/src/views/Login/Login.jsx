@@ -59,8 +59,9 @@ export default function Login() {
 
         } else {
             alert("Login realizado com sucesso");
-            navigate("/professor/perfil");
-
+            // navigate("/professor/perfil");
+            // navigate("/professor/declaracao-notas");
+            navigate("/professor/frequencia");
         }
 
         //limpar formularios 

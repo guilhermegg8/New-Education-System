@@ -1,18 +1,8 @@
-body {
-    font-family: 'Arial', sans-serif;
-    font-weight: 300;
-    line-height: 1.42em;
-    color: #A7A1AE;
-    background-color:#292735;
-      display: flex;
-    /* background-image: url(imagem/Screenshot_13.png) ; */
-  }
-
-
-
-
-
-
+header{
+    position: fixed;
+    top: 50%;
+    margin-top: -20.5em;
+}
 .containerForms{
     background-color: rgba(255, 0, 0, 0);
     width: 500px;
@@ -21,14 +11,7 @@ body {
     margin: 4% auto 0% 100%;
   
 }
-form{
-    background-color: #1B1A22;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    border-radius: 20px;
- 
-}
+
 input[type=text], input[type=submit]{
     width: 350px;
     margin: 0px  40px 20px 50px;
@@ -48,11 +31,6 @@ input[type=submit]:hover{
 }
 input[type=submit]{
     margin: 20px 0px 60px 0px;  color: white;
-}
-span{
-    font-size: 20px;
-    margin-top: 50px!important;
-    color: white;
 }
 hr{
     border: 0;
@@ -108,16 +86,9 @@ input[type=file]{
 h1{
     padding: 40px 0px 0px 0px; color: #2C64C1; font-weight: bold;
 }
-
-body {
-    font-family: 'Arial', sans-serif;
-    font-weight: 300;
-    line-height: 1.42em;
-    color: #A7A1AE;
-    background-color:#292735;
-      display: flex;
-    /* background-image: url(imagem/Screenshot_13.png) ; */
-  }
+.testeeee{
+    margin-left: 40%;
+}
 
 
 
@@ -125,9 +96,9 @@ body {
     background-color: #23212E;
     width: 800px;
     height: 100%;
-    margin: 7% auto 0% 00px;
-    margin-left: 30%;
+    margin: 10% auto 0% 0%;
     border-radius: 20px;
+    
 }
 .headerChamada{
     display: flex;
@@ -140,6 +111,7 @@ label{
     margin-top: 30px;
 }
 h2{
+    margin-top: 20px;
     margin-left: 40px;
 }
 
@@ -243,6 +215,7 @@ input[type=text]{
 }
 .desc_curso_semestre{
     float: left; margin-left: 40px; color: #2A5ECA;
+    margin-top: 30px;
 }
 .container_data_enviar{
     
@@ -253,12 +226,15 @@ input[type=text]{
         border-radius: 20px; width: 150px;
 }
 .txt_nome_do_aluno{
-    margin-bottom:-12px;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 .txt_ra_aluno{
+    margin-left: 10px;
     margin-bottom: 10px;
 }
 .link_mais_infos_aluno{
+    margin-left: 10px;
     text-decoration: none; color: #2A5ECA;
 }
 .container_titulos_das_notas{
@@ -271,7 +247,7 @@ input[type=text]{
     font-size: 20px;
 }
 .titulo_notas_nota_um{
-    margin-left: 160%;
+    margin-left: 170%;
 }
 .titulo_notas_nota_dois, .titulo_notas_nota_tres{
     margin-left: 19%;

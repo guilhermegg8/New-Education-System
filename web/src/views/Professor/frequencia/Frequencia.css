@@ -1,22 +1,18 @@
-body {
-    font-family: 'Arial', sans-serif;
-    font-weight: 300;
-    line-height: 1.42em;
-    color: #A7A1AE;
-    background-color:#292735;
-      display: flex;
-    /* background-image: url(imagem/Screenshot_13.png) ; */
-  }
 
+.teste2{
+    margin-top: -6%;
+    margin-left: 12%;
+}
 
 
 .containerChamada{
     background-color: #23212E;
     width: 800px;
     height: 100%;
-    margin: 7% auto 0% 00px;
+    margin: 0% auto 0% 00px;
     margin-left: 30%;
     border-radius: 20px;
+    padding-bottom: 20px;
 }
 .headerChamada{
     display: flex;
@@ -29,6 +25,7 @@ label{
     margin-top: 30px;
 }
 h2{
+    margin-top: 20px;
     margin-left: 40px;
 }
 
@@ -43,7 +40,7 @@ h2{
     background-color: #2A2836;
     flex: 1 1 300px;
     height: 120px;
-    margin:  10px 30px 10px 30px;
+    margin:  0px 500px 0px 30px;
     border-radius: 20px;
     display: flex;
 
@@ -76,18 +73,21 @@ input[type=checkbox]{
                     border-radius: 20px; width: 150px;
 }
 .titleFilterRa{
-    margin-left: 20px;
+    margin-left: 40px;
 }
 .titleFilterAlfa{
     margin-left: 35%;
+    
 }
 .filter{
-    width: 10px; height: 15px; margin-top: 4%; margin-left: 10px;
+    width: 20px; height: 10px; margin-top: 4%; margin-left: 10px;
+    margin-right: 10px;
             
     background-color: transparent; border: 1px solid #2A5ECA;
 }
 .handleTitleChamadaCurso{
     float: left; margin-left: 40px; color: #2A5ECA;
+    margin-top: 30px;
 }
 .containerSubHeadle{
     padding-top: 20px; margin-left: 60%;
@@ -96,12 +96,16 @@ input[type=checkbox]{
     margin-left: 20px;
 }
 .nomeAluno{
-    margin-bottom:-12px;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 .identrAluno{
+    margin-top: 20px;
+    margin-left: 10px;
     margin-bottom: 10px;
 }
 .infosMais{
+    margin-left: 10px;
     text-decoration: none; color: #2A5ECA;
 }
 .cardButtonFaltou{
