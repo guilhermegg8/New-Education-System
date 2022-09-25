@@ -32,7 +32,7 @@ body #root .global a {
 body #root .global.dark-theme {
   /* Dark Theme Variables */
   --theme-main: hsl(249, 16%, 20%);
-  --theme-medium: hsl(249, 16%, 21.5%)
+  --theme-medium: hsl(249, 16%, 21.5%);
   --theme-dark: hsl(249, 16%, 15%);
   --theme-light: hsl(249, 15%, 25%);
   color: var(--white);
@@ -55,9 +55,14 @@ body #root .global.dark-theme #change-contrast:hover .contrast {
 body #root .global.dark-theme #change-contrast:hover .contrast::before {
   background-color: var(--fc-main);
 }
+body #root .global.dark-theme .menu-burger::before, body #root .global.dark-theme .menu-burger::after,
+body #root .global.dark-theme .menu-burger div {
+  background: #fff;
+}
 body #root .global.body-contrast {
   /* Constrast Theme Variables */
   --theme-main: hsl(0, 0%, 2.5%);
+  --theme-medium: hsl(0, 0, 3.5%);
   --theme-dark: hsl(0, 0%, 1.5%);
   --theme-light: hsl(0, 0%, 10%);
   background-color: #000;
@@ -130,6 +135,25 @@ body #root .global.body-contrast .modal-button a {
   }
   body #root .global .menu-burger {
     display: block;
+    width: 30px;
+  }
+  body #root .global .menu-burger div, body #root .global .menu-burger::after, body #root .global .menu-burger::before {
+    background: var(--black);
+    content: "";
+    display: block;
+    height: 4px;
+    border-radius: 2px;
+    margin: 5px 0;
+    transition: 0.5s;
+  }
+  body #root .global .menu-burger.close::before {
+    transform: translateY(8.7px) rotate(135deg);
+  }
+  body #root .global .menu-burger.close::after {
+    transform: translateY(-8.7px) rotate(-135deg);
+  }
+  body #root .global .menu-burger.close div {
+    transform: scale(0);
   }
   body #root .global .change-theme {
     position: absolute;

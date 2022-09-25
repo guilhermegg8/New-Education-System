@@ -109,23 +109,28 @@ header {
       content: url(../../assets/react.svg);
     }
 
+    /* By Peter Pool */
     .nav-menu {
       @media screen and (max-width: 1150px) {
         position: fixed;
         left: 0;
-        background-color: var(--theme-medium);
+        top: 13rem;
+        height: 0;
         width: 100vw;
-        top: -200vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: 0.3s;
-        border-radius: 0 0 2.5rem 2.5rem;
-        padding-top: 1rem;
+        background-color: var(--theme-medium);
+        text-align: center;
+        align-items: center;
+        transition: 0.5s;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        border-radius: 0 0 5rem 5rem;
       }
 
       &.show-menu {
-        top: 13rem;
+        padding: 2rem 0;
+        height: 18.375rem;
+        visibility: visible;
       }
 
       .nav-list {
@@ -133,7 +138,8 @@ header {
         flex-direction: column;
         gap: 1rem;
         list-style: none;
-        align-self: center;
+        width: max-content;
+        margin: 0 auto;
       }
     }
     .nav-link {
@@ -225,8 +231,6 @@ header {
       gap: 3rem;
 
       .menu-burger {
-        font-size: 2.5rem;
-        display: none;
         cursor: pointer;
       }
     }

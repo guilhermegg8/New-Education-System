@@ -16,7 +16,7 @@ export default function Header({ type }) {
                     <FaWheelchair className="accessibility-icon" />
                 </a>
                 <a href="#" id="change-contrast" title="Modo Constraste">
-                    <button className="contrast" role="switch" aria-checked="false" id="contrast">
+                    <button className="contrast" role="switch" aria-checked="false" onClick={contrastTheme}>
                     </button>
                 </a>
                 <a href="#" className="accessibility-link" id="increase" title="Aumentar Fonte">
@@ -125,8 +125,7 @@ export default function Header({ type }) {
                         )}
                         <li className="nav-item">
                             <a href="#" className="nav-link change-theme" title="Mudar Tema">
-                                <button className="checkbox" role="switch" aria-checked="false" id="checkbox" onClick={darkTheme}>
-                                </button>
+                                <button className="checkbox" role="switch" aria-checked="false" onClick={darkTheme} />
                                 <span className="link-text">Mudar Tema</span>
                             </a>
                         </li>
@@ -137,7 +136,9 @@ export default function Header({ type }) {
                         <AiFillCloseCircle className="link-icon link-exit" />
                         <span className="link-text">Sair</span>
                     </a>
-                    <IoIosMenu className="menu-burger nav-toggle" onClick={showMenu} />
+                    <div className="menu-burger nav-toggle" onClick={showMenu}>
+                        <div></div>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -149,7 +150,29 @@ const showMenu = () => {
     const nav = document.querySelector('.nav-menu'),
         toggle = document.querySelector('.nav-toggle')
 
-    toggle.addEventListener('click', () => {
-        nav.classList.toggle('show-menu')
-    })
+    nav.classList.toggle('show-menu')
+    toggle.classList.toggle('close')
+}
+
+/*=============== DARK THEME ===============*/
+const darkTheme = () => {
+    const switchButton = document.querySelector('.checkbox'),
+        body = document.querySelector('body #root .global'),
+        darkTheme = 'dark-theme',
+        iconTheme = 'on'
+
+    // Adiciona ou remove a classe 'dark-theme' ao body
+    body.classList.toggle(darkTheme)
+    switchButton.classList.toggle(iconTheme)
+}
+
+const contrastTheme = () => {
+    const switchButton = document.querySelector('#change-contrast'),
+        body = document.querySelector('body #root .global'),
+        contrastTheme = 'body-contrast',
+        iconContrast = 'on'
+
+    //Adiciona ou remove a classe 'body-contrast' ao body
+    body.classList.toggle(contrastTheme)
+    switchButton.classList.toggle(iconContrast)
 }
