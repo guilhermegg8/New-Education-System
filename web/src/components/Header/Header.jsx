@@ -2,11 +2,10 @@ import "./Header.css"
 
 import { FaWheelchair } from "react-icons/fa"
 import { TbLetterA } from "react-icons/tb"
-import { BiPlus, BiMinus, BiSearch } from "react-icons/bi"
+import { BiPlus, BiMinus } from "react-icons/bi"
 import { RiUserAddLine, RiUserSearchLine } from "react-icons/ri"
 import { AiOutlinePlusCircle, AiFillCloseCircle } from "react-icons/ai"
-import { CgProfile } from "react-icons/cg"
-import { IoIosMenu } from "react-icons/io"
+import { BsCalendar4, BsShieldCheck, BsChatSquareText, BsArchive, BsSearch, BsInfoCircle, BsBook, BsFolder } from "react-icons/bs"
 
 export default function Header({ type }) {
     return (
@@ -41,48 +40,49 @@ export default function Header({ type }) {
                             <>
                                 <li className="nav-item">
                                     <a href="#" className="nav-link nav-link" title="Matrícula">
-                                        <CgProfile className="link-icon" />
+                                        <BsInfoCircle className="link-icon" />
                                         <span className="link-text">Matrícula</span>
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a href="#" className="nav-link" title="Consultas">
-                                        <i className="bi bi-search link-icon"></i>
+                                        <BsSearch className="link-icon" />
                                         <span className="link-text">Consultas</span>
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a href="#" className="nav-link" title="Agenda">
-                                        <i className="bi bi-calendar4-event link-icon"></i>
+                                        <BsCalendar4 className="link-icon" />
                                         <span className="link-text">Agenda</span>
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a href="#" className="nav-link" title="Segurança">
-                                        <i className="bi bi-shield-check link-icon"></i>
+                                        <BsShieldCheck className="link-icon" />
                                         <span className="link-text">Segurança</span>
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a href="#" className="nav-link" title="Solicitações">
-                                        <i className="bi bi-chat-square-text link-icon"></i>
+                                        <BsChatSquareText className="link-icon" />
                                         <span className="link-text">Solicitações</span>
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a href="#" className="nav-link" title="Upload de Arquivos">
-                                        <i className="bi bi-file-earmark-arrow-up link-icon"></i>
+                                        <BsArchive className="link-icon" />
                                         <span className="link-text">Upload Arquivos</span>
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a href="#" className="nav-link" title="Plano de Ensino">
-                                        <i className="bi bi-book link-icon"></i>
+                                        <BsBook className="link-icon" />
                                         <span className="link-text">Plano de Ensino</span>
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a href="#" className="nav-link" title="Matriz Inglês">
+                                        <BsFolder className="link-icon" />
                                         <span className="link-text">Matriz Inglês</span>
                                     </a>
                                 </li>
@@ -91,7 +91,7 @@ export default function Header({ type }) {
                             <>
                                 <li className="nav-item">
                                     <a href="#" className="nav-link nav-link" title="Matrícula">
-                                        <CgProfile className="link-icon" />
+                                        <BsInfoCircle className="link-icon" />
                                         <span className="link-text">Perfil</span>
                                     </a>
                                 </li>
@@ -103,7 +103,7 @@ export default function Header({ type }) {
                                 </li>
                                 <li className="nav-item">
                                     <a href="#" className="nav-link nav-link" title="Matrícula">
-                                        <BiSearch className="link-icon" />
+                                        <BsSearch className="link-icon" />
                                         <span className="link-text">Consultar Funcionário</span>
                                     </a>
                                 </li>

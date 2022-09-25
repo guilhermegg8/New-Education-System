@@ -59,7 +59,7 @@ body {
 
           &:hover {
             .contrast {
-              border: 2px solid var(--fc-mainc);
+              border: 2px solid var(--fc-main);
 
               &::before {
                 background-color: var(--fc-main);
@@ -187,7 +187,7 @@ body {
             background: var(--black);
             content: "";
             display: block;
-            height: 4px;
+            height: 2px;
             border-radius: 2px;
             margin: 5px 0;
             transition: 0.5s;
@@ -195,11 +195,11 @@ body {
 
           &.close {
             &::before {
-              transform: translateY(8.7px) rotate(135deg);
+              transform: translateY(6.7px) rotate(135deg);
             }
 
             &::after {
-              transform: translateY(-8.7px) rotate(-135deg);
+              transform: translateY(-6.7px) rotate(-135deg);
             }
 
             div {

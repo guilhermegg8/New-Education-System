@@ -50,7 +50,7 @@ body #root .global.dark-theme #change-contrast .contrast::before {
   background-color: var(--white);
 }
 body #root .global.dark-theme #change-contrast:hover .contrast {
-  border: 2px solid var(--fc-mainc);
+  border: 2px solid var(--fc-main);
 }
 body #root .global.dark-theme #change-contrast:hover .contrast::before {
   background-color: var(--fc-main);
@@ -141,16 +141,16 @@ body #root .global.body-contrast .modal-button a {
     background: var(--black);
     content: "";
     display: block;
-    height: 4px;
+    height: 2px;
     border-radius: 2px;
     margin: 5px 0;
     transition: 0.5s;
   }
   body #root .global .menu-burger.close::before {
-    transform: translateY(8.7px) rotate(135deg);
+    transform: translateY(6.7px) rotate(135deg);
   }
   body #root .global .menu-burger.close::after {
-    transform: translateY(-8.7px) rotate(-135deg);
+    transform: translateY(-6.7px) rotate(-135deg);
   }
   body #root .global .menu-burger.close div {
     transform: scale(0);

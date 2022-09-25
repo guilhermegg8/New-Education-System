@@ -35,7 +35,7 @@ export default function Login() {
 
         } else {
             alert("Login realizado com sucesso");
-            navigate("/matricula");
+            navigate("/aluno/matricula");
 
         }
 
