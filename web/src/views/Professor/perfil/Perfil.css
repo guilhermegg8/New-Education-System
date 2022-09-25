@@ -1,0 +1,281 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* Global*/
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Corpo da pagina */
+body{
+  display: flex;
+  overflow-x: hidden;
+}
+
+
+/*  Logo da pagina */
+.nav-logo {
+  margin-top: 2rem;
+  margin-left: 6rem;
+    width: 100px;
+    content: url("../../assets/Perfil.webp");
+}
+
+/* Lista Itens Menu lateral UL*/
+@media screen and (max-width: 1150px) {
+    .nav-menu {
+        position: fixed;
+        left: 0;
+        background-color: #a4b0ff;
+        width: 100vw;
+        top: -200vw;
+        display: grid;
+        justify-content: center;
+        transition: 0.3s;
+        border-radius: 0 0 2.5rem 2.5rem;
+        padding-top: 1rem;
+    }
+}
+
+/* Menu de navegação lateral */
+.nav {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  margin: 0;
+  height: 100%;
+  width: 18rem;
+  background-color: #a4b0ff;
+  overflow: hidden;
+  opacity: 0.8;
+  transition: width .5s;  
+   border-right: 4px inset #2f89fc;
+}
+
+/* Lista Itens Menu lateral UL*/
+.nav-list{
+  list-style: none;
+margin-right: 3rem;
+}
+
+/* Lista Itens Menu lateral LI */
+.nav-item{
+  right: 0;
+  margin: 1.5rem;
+  padding: 2.0;
+  text-align: center;
+}
+
+/* Lista  Menu lateral LI Links */
+.nav-link  {
+  display: block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #000000;
+  height: 4.5rem;
+}
+
+/* Efeito Link Menu lateral  */
+.nav-link:hover {
+color: #c71f1f;
+}
+
+/* Item da Pagina atual Menu Lateral*/
+.nav-link-active {
+    color: #2e4897;
+     display: block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  height: 2.5rem;
+}
+
+.nav-options {
+  margin: 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  gap: 3rem;
+  display: flex;
+}
+
+.link-icon {
+    font-size: 1.75rem;
+}
+
+.link-exit {
+    color: #ff0000;
+  margin-left: 4rem;
+}
+
+.link-text {
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+
+.menu-burger {
+    font-size: 2.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+.show-menu {
+    top: 12rem;
+}
+
+@media screen and (max-width: 1150px) {
+    body {
+        display: grid;
+    }
+  
+    header {
+        width: 100vw;
+        height: 13rem;
+        display: grid;
+        top: 0;
+        z-index: 5;
+        position: fixed;
+        gap: 0;
+    }
+
+    main {
+        position: relative;
+        margin: 15rem 0 0;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2.5%;
+        width: 95%;
+        height: 10rem;
+        background-color: #a4b0ff ;
+        position: relative;
+    }
+
+    .nav-logo {
+        width: 150px;
+    }
+
+    .menu-burger {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .nav-logo {
+        width: 125px;
+    }
+
+    .link-icon {
+        font-size: 1.5rem;
+    }
+
+    .link-text {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-logo {
+        width: 100px;
+    }
+
+    .menu-burger {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 492px) {
+    .nav-logo {
+        width: 75px;
+    }
+
+    .menu-burger {
+        font-size: 1.5rem;
+    }
+}
+
+.content-title {
+    font-weight: 600;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.content-title-icon {
+    font-size: 2rem;
+    color: #ff0000;
+}
+
+/* Conteudo principal */
+main{
+display: flex;
+
+}
+
+/* Perfil do usuario */
+.perfil{
+  position: relative;
+    margin-left: 20rem;
+    margin-right: auto;
+  height: 25rem;
+  width: 50rem;
+  display: flex;
+    top: 1rem;
+}
+/* Imagem de perfil do usuario */
+.perfil img{
+  height: 16rem;
+  width: 20rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+/* Texto Conteudo Perfil do usuario */
+.profile{
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+}
+/* Conteudo do usuario */
+.Text-active{
+color:  #2e4897;
+  font-weight: bolder;  
+}
+
+/* Tarefas */
+.tarefas{   
+  background-color: #a4b0ff;
+  border-radius: 24px;
+  opacity: 0.8;
+  position: relative;
+  margin-top: 25rem;
+  width: 22rem;
+  height: 14rem;
+  font-family: 'Roboto', sans-serif;
+  right: 10rem;
+  
+ 
+}
+/* Tarefas Titulo */
+.tarefas h1{
+color:  #2e4897;
+font-weight: bolder;
+  font-size: 1.8rem;
+  text-align: center;
+}
+/* Tarefas Conteudo OL */
+.tasks{
+margin: 1rem;
+  color: black;
+  font-weight: bolder;
+}
+/* Tarefas Conteudo LI */
+.tasks li{
+  padding: 0.4rem;
+}
+/* Tarefas Conteudo LI Links */
+.tasks li a{
+    text-decoration: none;
+  color: #000000;
+ font-weight: bolder;
+}

@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+    line-height: 1.42em;
+    color: #A7A1AE;
+    background-color:#292735;
+      display: flex;
+    /* background-image: url(imagem/Screenshot_13.png) ; */
+  }
+
+
+
+.containerChamada{
+    background-color: #23212E;
+    width: 800px;
+    height: 100%;
+    margin: 7% auto 0% 00px;
+    margin-left: 30%;
+    border-radius: 20px;
+}
+.headerChamada{
+    display: flex;
+
+}
+label{
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    margin-top: 30px;
+}
+h2{
+    margin-left: 40px;
+}
+
+.containerChamadaAluno{
+    width: 800px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.cardChamadaAluno{
+    background-color: #2A2836;
+    flex: 1 1 300px;
+    height: 120px;
+    margin:  10px 30px 10px 30px;
+    border-radius: 20px;
+    display: flex;
+
+}
+.cardChamadaAluno img{
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 80px;
+    height: 65px;
+    
+    
+}
+
+input[type=date]{
+   
+
+
+    border: none;
+    background-color: #2561D1;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+input[type=checkbox]{
+    background-color: transparent;
+    border: 1px solid #2561D1;
+}
+.handleEnviar{
+    margin-left: 10px;color: white; border: 2px solid #2A5ECA; background-color: transparent;  padding: 10px;
+                    border-radius: 20px; width: 150px;
+}
+.titleFilterRa{
+    margin-left: 20px;
+}
+.titleFilterAlfa{
+    margin-left: 35%;
+}
+.filter{
+    width: 10px; height: 15px; margin-top: 4%; margin-left: 10px;
+            
+    background-color: transparent; border: 1px solid #2A5ECA;
+}
+.handleTitleChamadaCurso{
+    float: left; margin-left: 40px; color: #2A5ECA;
+}
+.containerSubHeadle{
+    padding-top: 20px; margin-left: 60%;
+}
+.cardAluno{
+    margin-left: 20px;
+}
+.nomeAluno{
+    margin-bottom:-12px;
+}
+.identrAluno{
+    margin-bottom: 10px;
+}
+.infosMais{
+    text-decoration: none; color: #2A5ECA;
+}
+.cardButtonFaltou{
+    margin: 8% auto;
+}
+.btnFaltou{
+    width: 20px; height: 20px; border-radius: 50%; border: 2px solid #2A5ECA; background-color: transparent; margin: 25px 0px 0px 30%;
+}
+.pFaltou{
+    margin-top: 5px;
+}
