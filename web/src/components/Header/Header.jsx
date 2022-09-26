@@ -157,7 +157,7 @@ export default function Header({ type }) {
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="#" className="nav-link nav-link" title="Matrícula"> 
+                                        <a href="/professor/tarefas" className="nav-link nav-link" title="Matrícula"> 
                                             <FaTasks className="link-icon"/>
                                             <span className="link-text">Adicionar Tarefas</span>
                                         </a>

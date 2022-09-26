@@ -6,6 +6,7 @@ import NovoFuncionario from "./views/Secretaria/NovoFuncionario/NovoFuncionario"
 import Perfil from "./views/Professor/Perfil/Perfil"
 import Frequencia from "./views/Professor/Frequencia/Frequencia"
 import CadastroPlanoDeAula from './views/Professor/CadastroPlanoDeAula/CadastroPlanoDeAula'
+import Tarefas from "./views/Professor/CadastroTarefas/Tarefas"
 export default function Router() {
     return (
         <Routes>
@@ -15,7 +16,7 @@ export default function Router() {
             <Route path="/secretaria/novo-funcionario" element={<NovoFuncionario />} />
             <Route path="/professor/frequencia" element={<Frequencia />} />
             <Route path="/professor/plano-de-aula" element={<CadastroPlanoDeAula/>}/>
-           
+            <Route path="/professor/tarefas" element={<Tarefas/>} />
     
         </Routes>
         
