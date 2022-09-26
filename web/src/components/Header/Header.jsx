@@ -6,7 +6,9 @@ import { BiPlus, BiMinus, BiBookAdd } from "react-icons/bi"
 import { RiUserAddFill, RiUserAddLine, RiUserFollowLine, RiUserSearchLine } from "react-icons/ri"
 import { AiOutlinePlusCircle, AiFillCloseCircle } from "react-icons/ai"
 import { BsCalendar4, BsShieldCheck, BsChatSquareText, BsArchive, BsSearch, BsInfoCircle, BsBook, BsFolder } from "react-icons/bs"
+import { Navigate, useNavigate } from 'react-router-dom';
 
+import { FaLock, FaUser } from 'react-icons/fa'
 export default function Header({ type }) {
     return (
         <header>
@@ -124,7 +126,7 @@ export default function Header({ type }) {
                             <>
                             
                                 <li className="nav-item">
-                                        <a href="../../" className="nav-link nav-link" title="Matrícula">
+                                        <a href="/professor/perfil" className="nav-link nav-link" title="Matrícula">
                                             <BsInfoCircle className="link-icon" />
                                             <span className="link-text">Perfil</span>
                                         </a>
@@ -136,19 +138,20 @@ export default function Header({ type }) {
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="#" className="nav-link nav-link" title="Matrícula">
+                                        
+                                        <a href="/professor/plano-de-aula" className="nav-link nav-link" title="Matrícula">
                                             <BiBookAdd className="link-icon" />
                                             <span className="link-text">Cadastrar Plano <br /> de Aula</span>
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="#" className="nav-link nav-link" title="Matrícula">
+                                        <a href="/professor/declaracao-notas" className="nav-link nav-link" title="Matrícula">
                                         <AiOutlinePlusCircle className="link-icon" />
                                             <span className="link-text">Cadastrar Nota</span>
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="#" className="nav-link nav-link" title="Matrícula">
+                                        <a href="/professor/frequencia" className="nav-link nav-link" title="Matrícula">
                                             <RiUserFollowLine className="link-icon"/>
                                             <span className="link-text">Cadastrar Presença</span>
                                         </a>

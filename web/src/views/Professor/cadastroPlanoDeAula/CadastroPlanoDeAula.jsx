@@ -1,13 +1,14 @@
-
-import './CadastroPlanoDeAula.css'
-
 import Header from "../../../components/Header/Header"
 
 import "../../../styles/global.css"
+
+import "./CadastroPlanoDeAula.css"
 const CadastroPlanoDeAula = () => {
   return (
-    <>
-         <Header type="professor" />
+    <div className="bodyPlanoDeAula">
+    
+    
+    <Header type="professor" />
 
 
 
@@ -19,7 +20,7 @@ const CadastroPlanoDeAula = () => {
             <input type="text" 
                 name="txtName" 
                 placeholder="Nome Da Disciplina" 
-                />
+                className="input_text_plano"/>
             </label>
 
             <label htmlFor="txtCurso">
@@ -43,25 +44,25 @@ const CadastroPlanoDeAula = () => {
             <input style={{marginTop: "10px"}} type="text" 
                 name="txtDesc" 
                 placeholder="Descrição" 
-                />
+                className="input_text_plano"/>
                 
             </label>
            
             <label htmlFor="txtDocPlano" className="label-file">Selecione um arquivo &#187;</label>
             <input type="file" 
                 name="txtDocPlano" 
-                id="txtDocPlano" />
+                id="txtDocPlano"/>
                 <span id="file-name"></span>
         
             <hr />
-            <input type="submit" value="Cadastrar"/>
+            <input className="submit_plano_aula" type="submit" value="Cadastrar"/>
         </form>
      </div>
     
 
     
 
-    </>
+    </div>
   )
 }
 

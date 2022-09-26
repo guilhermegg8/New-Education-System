@@ -1,9 +1,8 @@
-body {
+.bodyPlanoDeAula {
     font-family: 'Arial', sans-serif;
     font-weight: 300;
     line-height: 1.42em;
     color: #A7A1AE;
-    background-color:#292735;
       display: flex;
     /* background-image: url(imagem/Screenshot_13.png) ; */
   }
@@ -18,10 +17,10 @@ body {
     width: 500px;
     height: 600px;
     text-align: center;
-    margin: 4% auto 0% 100%;
+    margin: 2% auto 0% 10%;
   
 }
-form{
+.formPlanoDeAula{
     background-color: #1B1A22;
     width: 100%;
     height: 100%;
@@ -29,7 +28,7 @@ form{
     border-radius: 20px;
  
 }
-input[type=text], input[type=submit]{
+.input_text_plano, .submit_plano_aula{
     width: 350px;
     margin: -20px  40px 0px 50px;
     height: 40px;
@@ -41,12 +40,12 @@ input[type=text], input[type=submit]{
     padding: 0px 0px 0px 10px;
     transition: 1s;
 }
-input[type=submit]:hover{
+.submit_plano_aula:hover{
     background-color: #2A5ECA;
     border: 1px solid black;
    
 }
-input[type=submit]{
+.submit_plano_aula{
     margin: 20px 0px 60px 0px;  color: white;
 }
 

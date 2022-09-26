@@ -7,9 +7,8 @@ import Header from "../../../components/Header/Header"
 import "../../../styles/global.css"
 const Frequencia = () => {
   return (
-    <>
-       
-       <Header type="professor" />
+    <div className='containerBodyFrequencia'>
+    <Header type="professor" className="headerFrequencia"/>
     <div className='teste2'>
      <div className="containerChamada">
             <div className="headerChamada">
@@ -104,34 +103,12 @@ const Frequencia = () => {
                      <p className='pFaltou'>Faltou</p>
                     </div>
                 </div>
-                <div className="cardChamadaAluno">
-                     <img  src={User} alt="" />
-                     <div className='cardAluno'>
-                        <h4 className='nomeAluno'>Vicenzzo Toth</h4>
-                        <p className='identrAluno'>RA: 11112222333</p>
-                        <a className='infosMais' href="#">Mais Infos</a>
-                    </div>
-                    <div className='cardButtonFaltou'>
-                     <button className='btnFaltou'></button>
-                     <p className='pFaltou'>Faltou</p>
-                    </div>
-                </div>
-                <div className="cardChamadaAluno">
-                     <img  src={User} alt="" />
-                     <div className='cardAluno'>
-                        <h4 className='nomeAluno'>Vicenzzo Toth</h4>
-                        <p className='identrAluno'>RA: 11112222333</p>
-                        <a className='infosMais' href="#">Mais Infos</a>
-                    </div>
-                    <div className='cardButtonFaltou'>
-                     <button className='btnFaltou'></button>
-                     <p className='pFaltou'>Faltou</p>
-                    </div>
-                </div>
+               
+                
             </div>
         </div>
     </div>
-    </>
+    </div>
   )
 }
 
