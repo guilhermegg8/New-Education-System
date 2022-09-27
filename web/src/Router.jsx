@@ -7,6 +7,8 @@ import Perfil from "./views/Professor/Perfil/Perfil"
 import Frequencia from "./views/Professor/Frequencia/Frequencia"
 import CadastroPlanoDeAula from './views/Professor/CadastroPlanoDeAula/CadastroPlanoDeAula'
 import Tarefas from "./views/Professor/CadastroTarefas/Tarefas"
+import VisualizarTurmas from "./views/Professor/VisualizarTurmas/VisualizarTurmas"
+import DeclaracaoNotas from "./views/Professor/DeclaracaoNotas/DeclaracaoNotas"
 export default function Router() {
     return (
         <Routes>
@@ -17,7 +19,9 @@ export default function Router() {
             <Route path="/professor/frequencia" element={<Frequencia />} />
             <Route path="/professor/plano-de-aula" element={<CadastroPlanoDeAula/>}/>
             <Route path="/professor/tarefas" element={<Tarefas/>} />
-    
+            <Route path="/professor/visualizar-turmas" element={<VisualizarTurmas/>} />
+            <Route path="/professor/declaracao-notas" element={<DeclaracaoNotas/>} />
+            
         </Routes>
         
     )

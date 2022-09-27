@@ -70,7 +70,7 @@ export default function Login() {
 
     }
     return (
-        <div className='container'>
+        <div className='containerLogin'>
             <div className='form-container'>
                 <div className='signin-signup'>
 
@@ -150,7 +150,7 @@ function modifyLogin() {
     const btn_sing_in = document.querySelector('#sign-in-btn');
     const btn_sing_up = document.querySelector('#sign-up-btn');
 
-    const container = document.querySelector('.container');
+    const container = document.querySelector('.containerLogin');
 
     btn_sing_up.addEventListener('click', () => {
         container.classList.add('sign-up-mode');
