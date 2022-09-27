@@ -7,7 +7,6 @@ import { RiUserAddFill, RiUserAddLine, RiUserFollowLine, RiUserSearchLine } from
 import { AiOutlinePlusCircle, AiFillCloseCircle } from "react-icons/ai"
 import { BsCalendar4, BsShieldCheck, BsChatSquareText, BsArchive, BsSearch, BsInfoCircle, BsBook, BsFolder } from "react-icons/bs"
 import { Navigate, useNavigate } from 'react-router-dom';
-import "../../styles/global.css"
 import { FaLock, FaUser } from 'react-icons/fa'
 export default function Header({ type }) {
     return (
