@@ -10,7 +10,7 @@ export default function NovoFuncionario() {
         <div className="global">
             <Header type="secretaria" />
             <main>
-                <Container title="Novo Funcionário" type="funcionario" />
+                <Container title="Novo Funcionário" type="funcionario" section="formulario" />
             </main>
         </div>
     )

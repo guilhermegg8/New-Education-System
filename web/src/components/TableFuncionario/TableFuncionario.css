@@ -1,1 +1,17 @@
-@import url(https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css);/*# sourceMappingURL=TableFuncionario.css.map */
+main .dataTables_wrapper {
+  width: 100%;
+}
+main .dataTables_wrapper .row {
+  background-color: var(--theme-dark);
+  border-radius: 0;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+main .dataTables_wrapper .row.first {
+  border-radius: 5px 5px 0 0;
+}
+main .dataTables_wrapper .row.last {
+  border-radius: 0 0 5px 5px;
+}/*# sourceMappingURL=TableFuncionario.css.map */
