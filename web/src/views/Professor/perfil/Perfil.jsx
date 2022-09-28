@@ -5,7 +5,7 @@ import Header from "../../../components/Header/Header"
 
 import "../../../styles/global.css"
 
-const Perfil = () => {
+export default function Perfil() {
   return (
     <div className='global'>            
     <Header type="professor" />
@@ -30,14 +30,13 @@ const Perfil = () => {
                   <p>Periodo de Trabalho: <span className="Text-active">Manha, Tarde, Noite  </span> </p>
                 </div>
         </section>
-
-        <section className= "tarefas">
-            <h1> TAREFAS</h1>
-            <ol className = "tasks">
-              <li><a href="">Nota 2 ADS</a></li>
-              <li><a href="#">Nota N1 DSM 2º Semestre</a></li>
-              <li><a href="#">Faltas ultima aula mes abril</a></li>
-            </ol>
+        <section className="tarefas">
+          <h1> TAREFAS</h1>
+          <ol className="tasks">
+            <li><a href="">Nota 2 ADS</a></li>
+            <li><a href="#">Nota N1 DSM 2º Semestre</a></li>
+            <li><a href="#">Faltas ultima aula mes abril</a></li>
+          </ol>
         </section>
 
       </main>
@@ -51,5 +50,3 @@ const Perfil = () => {
     </div>
   )
 }
-
-export default Perfil

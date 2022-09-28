@@ -3,12 +3,15 @@
   --hue: 216;
   --first-color-main: hsl(var(--hue), 68%, 45%);
   --first-color-dark: hsl(var(--hue), 68%, 30%);
+  --first-color-light: hsl(var(--hue), 68%, 70%);
   --theme-main: hsl(0, 0%, 90%);
   --theme-medium: hsl(0, 0%, 90%);
   --theme-dark: hsl(0, 0%, 80%);
   --theme-light: hsl(0, 0%, 95%);
   --white: hsl(0, 100%, 100%);
   --black: hsl(0, 0%, 0%);
+  --contrast-main: #ff0;
+  --contrast-dark: #c7c700;
 }
 
 /*===== RESET CSS =====*/
@@ -40,32 +43,12 @@ body {
         --theme-light: hsl(249, 15%, 25%);
         color: var(--white);
 
-        .nav-logo {
-          content: url(../assets/Logotipo-dark.png);
-        }
-
         a {
           color: var(--white);
         }
 
         #change-contrast {
-          .contrast {
-            border: 2px solid var(--white);
-
-            &::before {
-              background-color: var(--white);
-            }
-          }
-
-          &:hover {
-            .contrast {
-              border: 2px solid var(--fc-main);
-
-              &::before {
-                background-color: var(--fc-main);
-              }
-            }
-          }
+          display: none;
         }
 
         .menu-burger {
@@ -87,21 +70,30 @@ body {
         color: var(--white);
 
         a {
-          color: #c7c700;
+          color: var(--contrast-dark);
           text-decoration: underline;
         }
 
-        .nav-logo {
-          content: url(../assets/Logotipo-contrast.png);
+        h1 {
+          color: var(--contrast-main);
+        }
+
+        .button {
+          background: var(--contrast-main);
+          color: var(--black);
+
+          &:hover {
+            background: var(--contrast-dark);
+          }
         }
 
         #change-contrast {
           &:hover {
             .contrast {
-              border: 2px solid #ff0;
+              border: 2px solid var(--contrast-main);
 
               &::before {
-                background-color: #ff0;
+                background-color: var(--contrast-main);
               }
             }
           }
@@ -113,7 +105,7 @@ body {
           }
         }
 
-        #change-theme {
+        .change-theme {
           display: none;
         }
 
@@ -123,13 +115,13 @@ body {
         a:hover *,
         .info-test b,
         .materia {
-          color: #ff0;
+          color: var(--contrast-main);
         }
 
         .content-title-icon,
         .modal-content-icon,
         .modal-content-text b {
-          color: #c7c700;
+          color: var(--contrast-dark);
         }
 
         .important-announcement {
@@ -138,7 +130,7 @@ body {
 
         .modal-button {
           a {
-            background-color: #c7c700;
+            background-color: var(--contrast-dark);
             color: var(--white);
           }
         }
@@ -160,8 +152,8 @@ body {
           flex-direction: column;
           top: 0;
           z-index: 5;
-          position: fixed;
           gap: 0;
+          position: fixed;
         }
 
         .nav {
@@ -227,7 +219,8 @@ body {
 
         main {
           position: relative;
-          margin: 15rem 0 0;
+          padding: 18rem 0 5rem;
+          height: max-content;
         }
       }
     }
@@ -296,4 +289,16 @@ body {
     font-size: 2rem;
     color: var(--first-color-main);
   }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }

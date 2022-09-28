@@ -3,12 +3,15 @@
   --hue: 216;
   --first-color-main: hsl(var(--hue), 68%, 45%);
   --first-color-dark: hsl(var(--hue), 68%, 30%);
+  --first-color-light: hsl(var(--hue), 68%, 70%);
   --theme-main: hsl(0, 0%, 90%);
   --theme-medium: hsl(0, 0%, 90%);
   --theme-dark: hsl(0, 0%, 80%);
   --theme-light: hsl(0, 0%, 95%);
   --white: hsl(0, 100%, 100%);
   --black: hsl(0, 0%, 0%);
+  --contrast-main: #ff0;
+  --contrast-dark: #c7c700;
 }
 
 /*===== RESET CSS =====*/
@@ -37,23 +40,11 @@ body #root .global.dark-theme {
   --theme-light: hsl(249, 15%, 25%);
   color: var(--white);
 }
-body #root .global.dark-theme .nav-logo {
-  content: url(../assets/Logotipo-dark.png);
-}
 body #root .global.dark-theme a {
   color: var(--white);
 }
-body #root .global.dark-theme #change-contrast .contrast {
-  border: 2px solid var(--white);
-}
-body #root .global.dark-theme #change-contrast .contrast::before {
-  background-color: var(--white);
-}
-body #root .global.dark-theme #change-contrast:hover .contrast {
-  border: 2px solid var(--fc-main);
-}
-body #root .global.dark-theme #change-contrast:hover .contrast::before {
-  background-color: var(--fc-main);
+body #root .global.dark-theme #change-contrast {
+  display: none;
 }
 body #root .global.dark-theme .menu-burger::before, body #root .global.dark-theme .menu-burger::after,
 body #root .global.dark-theme .menu-burger div {
@@ -69,22 +60,29 @@ body #root .global.body-contrast {
   color: var(--white);
 }
 body #root .global.body-contrast a {
-  color: #c7c700;
+  color: var(--contrast-dark);
   text-decoration: underline;
 }
-body #root .global.body-contrast .nav-logo {
-  content: url(../assets/Logotipo-contrast.png);
+body #root .global.body-contrast h1 {
+  color: var(--contrast-main);
+}
+body #root .global.body-contrast .button {
+  background: var(--contrast-main);
+  color: var(--black);
+}
+body #root .global.body-contrast .button:hover {
+  background: var(--contrast-dark);
 }
 body #root .global.body-contrast #change-contrast:hover .contrast {
-  border: 2px solid #ff0;
+  border: 2px solid var(--contrast-main);
 }
 body #root .global.body-contrast #change-contrast:hover .contrast::before {
-  background-color: #ff0;
+  background-color: var(--contrast-main);
 }
 body #root .global.body-contrast .accessibility * {
   text-decoration: none;
 }
-body #root .global.body-contrast #change-theme {
+body #root .global.body-contrast .change-theme {
   display: none;
 }
 body #root .global.body-contrast .nav-link-active *,
@@ -93,18 +91,18 @@ body #root .global.body-contrast a:hover,
 body #root .global.body-contrast a:hover *,
 body #root .global.body-contrast .info-test b,
 body #root .global.body-contrast .materia {
-  color: #ff0;
+  color: var(--contrast-main);
 }
 body #root .global.body-contrast .content-title-icon,
 body #root .global.body-contrast .modal-content-icon,
 body #root .global.body-contrast .modal-content-text b {
-  color: #c7c700;
+  color: var(--contrast-dark);
 }
 body #root .global.body-contrast .important-announcement {
   color: var(--white);
 }
 body #root .global.body-contrast .modal-button a {
-  background-color: #c7c700;
+  background-color: var(--contrast-dark);
   color: var(--white);
 }
 
@@ -119,8 +117,8 @@ body #root .global.body-contrast .modal-button a {
     flex-direction: column;
     top: 0;
     z-index: 5;
-    position: fixed;
     gap: 0;
+    position: fixed;
   }
   body #root .global .nav {
     justify-content: space-between;
@@ -171,7 +169,10 @@ body #root .global.body-contrast .modal-button a {
   }
   body #root .global main {
     position: relative;
-    margin: 15rem 0 0;
+    padding: 18rem 0 5rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
 }
 @media screen and (max-width: 768px) {
@@ -214,4 +215,15 @@ body #root .global.body-contrast .modal-button a {
     font-size: 2rem;
     color: var(--first-color-main);
   }
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }/*# sourceMappingURL=global.css.map */

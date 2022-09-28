@@ -1,0 +1,20 @@
+main {
+  .dataTables_wrapper {
+    width: 100%;
+
+    .row {
+      background-color: var(--theme-dark);
+      border-radius: 0;
+      width: 100%;
+      height: max-content;
+
+      &.first {
+        border-radius: 5px 5px 0 0;
+      }
+
+      &.last {
+        border-radius: 0 0 5px 5px;
+      }
+    }
+  }
+}
