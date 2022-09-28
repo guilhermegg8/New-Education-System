@@ -1,115 +1,140 @@
-
-
-
-.teste2{
-    margin-left: -10%;
+.teste2 {
+  margin-left: -10%;
 }
 
-
-
-.containerChamada{
-    background-color: #23212E;
-    width: 800px;
-    height: 100%;
-    border-radius: 20px;
-}
-.headerChamada{
-    display: flex;
-
-}
-label{
-    justify-content: right;
-    align-items: right;
-    text-align: right;
-    margin-top: 30px;
-}
-h2{
-    margin-top: 10px;
-    margin-left: 40px;
+.containerChamada {
+  background-color: #23212e;
+  width: 800px;
+  height: 100%;
+  border-radius: 20px;
 }
 
-.containerChamadaAluno{
-    width: 800px;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-}
-.cardChamadaAluno{
-    background-color: #2A2836;
-    flex: 1 1 300px;
-    height: 120px;
-    margin:  10px 30px 10px 30px;
-    border-radius: 20px;
-    display: flex;
-
-}
-.cardChamadaAluno img{
-    margin-top: 20px;
-    margin-left: 25px;
-    width: 80px;
-    height: 65px;
-    
-    
+.headerChamada {
+  display: flex;
 }
 
-input[type=date]{
-   
-
-
-    border: none;
-    background-color: #2561D1;
-    padding: 10px;
-    border-radius: 20px;
+label {
+  justify-content: right;
+  align-items: right;
+  text-align: right;
+  margin-top: 30px;
 }
 
-input[type=checkbox]{
-    background-color: transparent;
-    border: 1px solid #2561D1;
+h2 {
+  margin-top: 10px;
+  margin-left: 40px;
 }
-.handleEnviar{
-    margin-left: 10px;color: white; border: 2px solid #2A5ECA; background-color: transparent;  padding: 10px;
-                    border-radius: 20px; width: 150px;
+
+.containerChamadaAluno {
+  width: 800px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
 }
-.titleFilterRa{
-    margin-left: 10px;
-    margin-left: 20px;
+
+.cardChamadaAluno {
+  background-color: #2a2836;
+  flex: 1 1 300px;
+  height: 120px;
+  margin: 10px 30px 10px 30px;
+  border-radius: 20px;
+  display: flex;
 }
-.titleFilterAlfa{
-    margin-left: 35%;
+
+.cardChamadaAluno img {
+  margin-top: 20px;
+  margin-left: 25px;
+  width: 80px;
+  height: 65px;
 }
-.filter{
-    margin-right: 10px;
-    width: 10px; height: 15px; margin-top: 4%; margin-left: 10px;
-            
-    background-color: transparent; border: 1px solid #2A5ECA;
+
+input[type="date"] {
+  border: none;
+  background-color: #2561d1;
+  padding: 10px;
+  border-radius: 20px;
 }
-.handleTitleChamadaCurso{margin-top: 30px;
-    float: left; margin-left: 40px; color: #2A5ECA;
+
+input[type="checkbox"] {
+  background-color: transparent;
+  border: 1px solid #2561d1;
 }
-.containerSubHeadle{
-    padding-top: 20px; margin-left: 60%;
+
+.handleEnviar {
+  margin-left: 10px;
+  color: white;
+  border: 2px solid #2a5eca;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 20px;
+  width: 150px;
 }
-.cardAluno{
-    margin-left: 20px;
+
+.titleFilterRa {
+  margin-left: 10px;
+  margin-left: 20px;
 }
-.nomeAluno{
-    margin-top: 10px;
-    margin-bottom:-12px;
+
+.titleFilterAlfa {
+  margin-left: 35%;
 }
-.identrAluno{
-    margin-top: 20px;
-    margin-bottom: 10px;
+
+.filter {
+  margin-right: 10px;
+  width: 10px;
+  height: 15px;
+  margin-top: 4%;
+  margin-left: 10px;
+
+  background-color: transparent;
+  border: 1px solid #2a5eca;
 }
-.infosMais{
-    text-decoration: none; color: #2A5ECA;
+
+.handleTitleChamadaCurso {
+  margin-top: 30px;
+  float: left;
+  margin-left: 40px;
+  color: #2a5eca;
 }
-.cardButtonFaltou{
-    margin: 8% auto;
+
+.containerSubHeadle {
+  padding-top: 20px;
+  margin-left: 60%;
 }
-.btnFaltou{
-    width: 20px; height: 20px; border-radius: 50%; border: 2px solid #2A5ECA; background-color: transparent; margin: 25px 0px 0px 30%;
+
+.cardAluno {
+  margin-left: 20px;
 }
-.pFaltou{
-    margin-top: 5px;
+
+.nomeAluno {
+  margin-top: 10px;
+  margin-bottom: -12px;
+}
+
+.identrAluno {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.infosMais {
+  text-decoration: none;
+  color: #2a5eca;
+}
+
+.cardButtonFaltou {
+  margin: 8% auto;
+}
+
+.btnFaltou {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #2a5eca;
+  background-color: transparent;
+  margin: 25px 0px 0px 30%;
+}
+
+.pFaltou {
+  margin-top: 5px;
 }

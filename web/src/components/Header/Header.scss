@@ -40,6 +40,8 @@ header {
     }
 
     #change-contrast {
+      background: none;
+      border: none;
       &.on {
         .contrast {
           border: 2px solid var(--contrast-dark);
@@ -107,6 +109,7 @@ header {
     gap: 2rem;
     height: 100vh;
     padding: 0.5rem 0;
+    min-width: 20rem;
 
     .nav-logo {
       width: 11rem;
@@ -117,6 +120,8 @@ header {
     /* By Peter Pool */
     .nav-menu {
       overflow-y: scroll;
+      max-height: 50vh;
+
       &::-webkit-scrollbar {
         width: 3px;
       }
@@ -142,8 +147,7 @@ header {
         transition: 0.5s;
         z-index: 1;
         visibility: hidden;
-        overflow-y: hidden;
-        border-radius: 0 0 5rem 5rem;
+        border-radius: 0 0 20px 20px;
       }
 
       &.show-menu {
@@ -169,6 +173,9 @@ header {
       width: max-content;
 
       &.change-theme {
+        background: none;
+        border: none;
+        cursor: pointer;
         margin-top: 1rem;
 
         &.on {

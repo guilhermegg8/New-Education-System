@@ -14,10 +14,10 @@ export default function Header({ type }) {
                 <a href="#" className="accessibility-link" title="Acessibilidade">
                     <FaWheelchair className="accessibility-icon" />
                 </a>
-                <a href="#" id="change-contrast" title="Modo Constraste">
+                <button id="change-contrast" title="Modo Constraste">
                     <button className="contrast" role="switch" aria-checked="false" onClick={contrastTheme}>
                     </button>
-                </a>
+                </button>
                 <a href="#" className="accessibility-link" id="increase" title="Aumentar Fonte">
                     <TbLetterA className="accessibility-icon" />
                     <sup>
@@ -205,10 +205,10 @@ export default function Header({ type }) {
                             </>
                         ) : (<></>)}
                         <li className="nav-item">
-                            <a href="#" className="nav-link change-theme" title="Mudar Tema" onClick={darkTheme}>
+                            <button className="nav-link change-theme" title="Mudar Tema" onClick={darkTheme}>
                                 <button className="checkbox" role="switch" aria-checked="false" />
                                 <span className="link-text">Mudar Tema</span>
-                            </a>
+                            </button>
                         </li>
                     </ul>
                 </div>

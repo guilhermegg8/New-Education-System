@@ -32,6 +32,10 @@ header .accessibility .accessibility-link sup {
   font-size: 0.75rem;
   transition: color 0.2s;
 }
+header .accessibility #change-contrast {
+  background: none;
+  border: none;
+}
 header .accessibility #change-contrast.on .contrast {
   border: 2px solid var(--contrast-dark);
   padding: 0;
@@ -85,6 +89,7 @@ header .nav {
   gap: 2rem;
   height: 100vh;
   padding: 0.5rem 0;
+  min-width: 20rem;
   /* By Peter Pool */
 }
 header .nav .nav-logo {
@@ -96,6 +101,7 @@ header .nav .nav-logo {
 }
 header .nav .nav-menu {
   overflow-y: scroll;
+  max-height: 50vh;
 }
 header .nav .nav-menu::-webkit-scrollbar {
   width: 3px;
@@ -120,8 +126,7 @@ header .nav .nav-menu::-webkit-scrollbar-thumb {
     transition: 0.5s;
     z-index: 1;
     visibility: hidden;
-    overflow-y: hidden;
-    border-radius: 0 0 5rem 5rem;
+    border-radius: 0 0 20px 20px;
   }
 }
 header .nav .nav-menu.show-menu {
@@ -149,6 +154,9 @@ header .nav .nav-link {
   width: max-content;
 }
 header .nav .nav-link.change-theme {
+  background: none;
+  border: none;
+  cursor: pointer;
   margin-top: 1rem;
 }
 header .nav .nav-link.change-theme.on .checkbox {

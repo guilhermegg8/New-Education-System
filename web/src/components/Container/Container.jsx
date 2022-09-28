@@ -2,17 +2,17 @@ import './Container.css'
 
 import '../../styles/global.css'
 
-import FormFuncionario from '../FormFuncionario/FormFuncionario'
-import FormAluno from '../FormAluno/FormAluno'
-import FormDestaque from '../FormDestaque/FormDestaque'
-import FormCurso from '../FormCurso/FormCurso'
-import FormDisciplina from '../FormDisciplina/FormDisciplina'
+import FormFuncionario from '../Forms/FormFuncionario/FormFuncionario'
+import FormAluno from '../Forms/FormAluno/FormAluno'
+import FormDestaque from '../Forms/FormDestaque/FormDestaque'
+import FormCurso from '../Forms/FormCurso/FormCurso'
+import FormDisciplina from '../Forms/FormDisciplina/FormDisciplina'
 
-import TableAluno from '../TableAluno/TableAluno'
-import TableCurso from '../TableCurso/TableCurso'
-import TableFuncionario from '../TableFuncionario/TableFuncionario'
-import TableDestaque from '../TableDestaque/TableDestaque'
-import TableDisciplina from '../TableDisciplina/TableDisciplina'
+import TableAluno from '../Tables/TableAluno/TableAluno'
+import TableCurso from '../Tables/TableCurso/TableCurso'
+import TableFuncionario from '../Tables/TableFuncionario/TableFuncionario'
+import TableDestaque from '../Tables/TableDestaque/TableDestaque'
+import TableDisciplina from '../Tables/TableDisciplina/TableDisciplina'
 
 import { IoIosArrowDropleftCircle } from 'react-icons/io'
 
@@ -35,7 +35,7 @@ export default function Container({ title, type, section }) {
                 ) : type === "disciplina" ? (
                     <FormDisciplina />
                 ) : type === ""
-            ) : section === "consulta" ? (
+            ) : section === "tabela" ? (
                 type === "funcionario" ? (
                     <TableFuncionario />
                 ) : type === "aluno" ? (

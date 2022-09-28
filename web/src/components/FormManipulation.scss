@@ -1,4 +1,4 @@
-.form-secretary {
+.form-manipulation {
   display: flex;
   flex-direction: column;
 
@@ -28,8 +28,8 @@
   }
 }
 
-@media screen and (max-width: 1250px) {
-  .form-secretary {
+@media screen and (max-width: 1425px) {
+  .form-manipulation {
     .form-inputs {
       gap: 2.5rem 2.5rem;
 
@@ -41,7 +41,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .form-secretary {
+  .form-manipulation {
     .form-inputs {
       display: flex;
       flex-direction: column;
@@ -55,10 +55,31 @@
 }
 
 @media screen and (max-width: 600px) {
-  .form-secretary {
+  .form-manipulation {
     .form-inputs {
       .input {
         width: 20rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .form-manipulation {
+    .form-inputs {
+      .input {
+        width: 15rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .form-manipulation {
+    .form-inputs {
+      .input {
+        width: 12.5rem;
+        font-size: 0.85rem;
       }
     }
   }

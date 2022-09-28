@@ -9,7 +9,7 @@ body {
   background-color: #22202d;
 }
 
-.container {
+.containerLogin {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -273,6 +273,8 @@ input {
   .content {
     color: #fff;
     transition: 0.9s 0.6s ease-in-out;
+    overflow: visible;
+    max-height: max-content;
   }
 
   h3 {

@@ -1,6 +1,6 @@
-import './TableFuncionario.css'
+import '../../Table.css'
 
-export default function TableFuncionario() {
+export default function TableAluno() {
     // =============== DATATABLES SETTINGS ===============
     $(document).ready(function () {
         $('#example').DataTable({
@@ -35,13 +35,6 @@ export default function TableFuncionario() {
             }
         })
     }
-
-    const rows = document.querySelectorAll('.row')
-    const firstRow = rows[0]
-    const lastRow = rows[2]
-
-    firstRow.classList.add('first')
-    lastRow.classList.add('last')
 
     return (
         <table id="example" className="display">

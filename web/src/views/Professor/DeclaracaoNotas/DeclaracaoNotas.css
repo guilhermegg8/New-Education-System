@@ -1,167 +1,232 @@
-
-
-.containerNotas{
-    background-color: #23212E;
-    width: 800px;
-    height: 100%;
-    margin-left: 10%;
-    border-radius: 20px;
-}
-.headerNotas{
-    display: flex;
-
-}
-label{
-    justify-content: right;
-    align-items: right;
-    text-align: right;
-    margin-top: 30px;
-}
-h2{
-    margin-left: 40px;
+.containerNotas {
+  background-color: #23212e;
+  width: 800px;
+  height: 100%;
+  margin-left: 10%;
+  border-radius: 20px;
 }
 
-.containerNotasAluno{
-    width: 800px;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-}
-.cardNotasAluno{
-    background-color: #2A2836;
-    flex: 1 1 300px;
-    height: 120px;
-    margin:  10px 30px 10px 30px;
-    border-radius: 20px;
-    display: flex;
-
-}
-.cardNotasAluno img{
-    margin-top: 20px;
-    margin-left: 25px;
-    width: 80px;
-    height: 65px;
-    
-    
+.headerNotas {
+  display: flex;
 }
 
-input[type=date]{
-   
-
-
-    border: none;
-    background-color: #2561D1;
-    padding: 10px;
-    border-radius: 20px;
+label {
+  justify-content: right;
+  align-items: right;
+  text-align: right;
+  margin-top: 30px;
 }
 
+h2 {
+  margin-left: 40px;
+}
 
-.handleEnviar{
-    margin-left: 10px;color: white; border: 2px solid #2A5ECA; background-color: transparent;  padding: 10px;
-                    border-radius: 20px; width: 150px;
+.containerNotasAluno {
+  width: 800px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
 }
-.titleFilterRa{
-    margin-left: 20px;
-}
-.titleFilterAlfa{
-    margin-left: 35%;
-}
-.filter{
-    width: 10px; height: 15px; margin-top: 4%; margin-left: 10px;
-            
-    background-color: transparent; border: 1px solid #2A5ECA;
-}
-.handleTitleChamadaCurso{
-    float: left; margin-left: 40px; color: #2A5ECA;
-}
-.containerSubHeadle{
-    padding-top: 20px; margin-left: 60%;
-}
-.cardAluno{
-    margin-left: 20px;
-}
-.nomeAluno{
-    margin-bottom:-12px;
-}
-.identrAluno{
-    margin-bottom: 10px;
-}
-.infosMais{
-    text-decoration: none; color: #2A5ECA;
-}
-.cardButtonFaltou{
-    margin: 8% auto;
-}
-.btnFaltou{
-    width: 20px; height: 20px; border-radius: 50%; border: 2px solid #2A5ECA; background-color: transparent; margin: 25px 0px 0px 30%;
-}
-.pFaltou{
-    margin-top: 5px;
-}
-.input_text_notas{
-    color: white;
-    background-color: transparent;
-    width: 40px; height: 40px; text-align: center;border-radius: 50%; padding-left: 0; margin: 0px  20px 0px 0px;
-}
-.containerChamada{
-    margin-left: 25%; margin-right: 10%;
-}
-.alfa_order{
-    margin-left: 35%;
-}
-.bt_alfa_order, .bt_ra_order{
-    width: 10px; height: 15px; margin-top: 4%; margin-left: 10px;
-    background-color: transparent; border: 1px solid #2A5ECA;
 
-}.ra_order{
-    margin-left: 20px;
+.cardNotasAluno {
+  background-color: #2a2836;
+  flex: 1 1 300px;
+  height: 120px;
+  margin: 10px 30px 10px 30px;
+  border-radius: 20px;
+  display: flex;
 }
-.desc_curso_semestre{
-    float: left; margin-left: 40px; color: #2A5ECA;
+
+.cardNotasAluno img {
+  margin-top: 20px;
+  margin-left: 25px;
+  width: 80px;
+  height: 65px;
 }
-.container_data_enviar{
-    
-    padding-top: 20px; margin-left: 60%;
+
+input[type="date"] {
+  border: none;
+  background-color: #2561d1;
+  padding: 10px;
+  border-radius: 20px;
 }
-.bt_enviar_nota{
-    margin-left: 10px;color: white;
- background-color: transparent;  padding: 10px;
-        border-radius: 20px; width: 150px;
-        border:1px solid white;
+
+.handleEnviar {
+  margin-left: 10px;
+  color: white;
+  border: 2px solid #2a5eca;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 20px;
+  width: 150px;
 }
-.bt_enviar_nota:hover{
-    transition: 1.5s;
-    background-color: #2A5ECA;
+
+.titleFilterRa {
+  margin-left: 20px;
 }
-.txt_nome_do_aluno{
-    margin-bottom:-12px;
+
+.titleFilterAlfa {
+  margin-left: 35%;
 }
-.txt_ra_aluno{
-    margin-top: 20px;
-    margin-bottom: 10px;
+
+.filter {
+  width: 10px;
+  height: 15px;
+  margin-top: 4%;
+  margin-left: 10px;
+
+  background-color: transparent;
+  border: 1px solid #2a5eca;
 }
-.link_mais_infos_aluno{
-    text-decoration: none; color: #2A5ECA;
+
+.handleTitleChamadaCurso {
+  float: left;
+  margin-left: 40px;
+  color: #2a5eca;
 }
-.container_titulos_das_notas{
-    display: flex;
+
+.containerSubHeadle {
+  padding-top: 20px;
+  margin-left: 60%;
 }
-.titulo_notas_nota_um, .titulo_notas_nota_dois, .titulo_notas_nota_tres, .titulo_notas_trabalho{
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    font-size: 20px;
+
+.cardAluno {
+  margin-left: 20px;
 }
-.titulo_notas_nota_um{
-    margin-left: 160%;
+
+.nomeAluno {
+  margin-bottom: -12px;
 }
-.titulo_notas_nota_dois, .titulo_notas_nota_tres{
-    margin-left: 19%;
+
+.identrAluno {
+  margin-bottom: 10px;
 }
-.titulo_notas_trabalho{
-    margin-left: 27%;
+
+.infosMais {
+  text-decoration: none;
+  color: #2a5eca;
 }
-.container_input_notas{
-    margin: 8% auto; display: flex;
+
+.cardButtonFaltou {
+  margin: 8% auto;
+}
+
+.btnFaltou {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #2a5eca;
+  background-color: transparent;
+  margin: 25px 0px 0px 30%;
+}
+
+.pFaltou {
+  margin-top: 5px;
+}
+
+.input_text_notas {
+  color: white;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  padding-left: 0;
+  margin: 0px 20px 0px 0px;
+}
+
+.containerChamada {
+  margin-left: 25%;
+  margin-right: 10%;
+}
+
+.alfa_order {
+  margin-left: 35%;
+}
+
+.bt_alfa_order,
+.bt_ra_order {
+  width: 10px;
+  height: 15px;
+  margin-top: 4%;
+  margin-left: 10px;
+  background-color: transparent;
+  border: 1px solid #2a5eca;
+}
+
+.ra_order {
+  margin-left: 20px;
+}
+
+.desc_curso_semestre {
+  float: left;
+  margin-left: 40px;
+  color: #2a5eca;
+}
+
+.container_data_enviar {
+  padding-top: 20px;
+  margin-left: 60%;
+}
+
+.bt_enviar_nota {
+  margin-left: 10px;
+  color: white;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 20px;
+  width: 150px;
+  border: 1px solid white;
+}
+
+.bt_enviar_nota:hover {
+  transition: 1.5s;
+  background-color: #2a5eca;
+}
+
+.txt_nome_do_aluno {
+  margin-bottom: -12px;
+}
+
+.txt_ra_aluno {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.link_mais_infos_aluno {
+  text-decoration: none;
+  color: #2a5eca;
+}
+
+.container_titulos_das_notas {
+  display: flex;
+}
+
+.titulo_notas_nota_um,
+.titulo_notas_nota_dois,
+.titulo_notas_nota_tres,
+.titulo_notas_trabalho {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.titulo_notas_nota_um {
+  margin-left: 160%;
+}
+
+.titulo_notas_nota_dois,
+.titulo_notas_nota_tres {
+  margin-left: 19%;
+}
+
+.titulo_notas_trabalho {
+  margin-left: 27%;
+}
+
+.container_input_notas {
+  margin: 8% auto;
+  display: flex;
 }

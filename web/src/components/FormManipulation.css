@@ -1,0 +1,60 @@
+.form-manipulation {
+  display: flex;
+  flex-direction: column;
+}
+.form-manipulation .form-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem 7rem;
+}
+.form-manipulation .form-inputs .input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  width: 20rem;
+  font-size: 1rem;
+}
+.form-manipulation .form-inputs .input.button {
+  background: var(--first-color-main);
+  cursor: pointer;
+  text-transform: none;
+  margin-top: 0.5rem;
+}
+.form-manipulation .form-inputs .input.button:hover {
+  background: var(--first-color-dark);
+}
+
+@media screen and (max-width: 1425px) {
+  .form-manipulation .form-inputs {
+    gap: 2.5rem 2.5rem;
+  }
+  .form-manipulation .form-inputs .input {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form-manipulation .form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .form-manipulation .form-inputs .input {
+    width: 25rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form-manipulation .form-inputs .input {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .form-manipulation .form-inputs .input {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 395px) {
+  .form-manipulation .form-inputs .input {
+    width: 12.5rem;
+    font-size: 0.85rem;
+  }
+}/*# sourceMappingURL=FormManipulation.css.map */
