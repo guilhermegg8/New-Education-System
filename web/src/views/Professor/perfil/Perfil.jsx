@@ -7,7 +7,7 @@ import "../../../styles/global.css"
 
 const Perfil = () => {
   return (
-    <>            
+    <div className='global'>            
     <Header type="professor" />
 
         <main>
@@ -48,7 +48,7 @@ const Perfil = () => {
 
 
 
-    </>
+    </div>
   )
 }
 

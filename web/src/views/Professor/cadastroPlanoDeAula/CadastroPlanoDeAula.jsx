@@ -5,6 +5,7 @@ import "../../../styles/global.css"
 import "./CadastroPlanoDeAula.css"
 const CadastroPlanoDeAula = () => {
   return (
+    <div className="global">
     <div className="bodyPlanoDeAula">
     
     
@@ -62,6 +63,7 @@ const CadastroPlanoDeAula = () => {
 
     
 
+    </div>
     </div>
   )
 }

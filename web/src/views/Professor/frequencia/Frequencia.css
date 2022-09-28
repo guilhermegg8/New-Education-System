@@ -2,7 +2,7 @@
 
 
 .teste2{
-    margin-left: 5%;
+    margin-left: -10%;
 }
 
 
@@ -11,8 +11,6 @@
     background-color: #23212E;
     width: 800px;
     height: 100%;
-    margin: -46% auto 0% 00px;
-    margin-left: 30%;
     border-radius: 20px;
 }
 .headerChamada{

@@ -22,6 +22,7 @@ export default function Router() {
             <Route path="/professor/visualizar-turmas" element={<VisualizarTurmas/>} />
             <Route path="/professor/declaracao-notas" element={<DeclaracaoNotas/>} />
             
+            
         </Routes>
         
     )

@@ -1,10 +1,11 @@
 import "./DeclaracaoNotas.css"
 import User from "../../../assets/Perfil.webp"
 import Header from "../../../components/Header/Header"
+import "../../../styles/global.css"
 
 const DeclaracaoNotas = () => {
   return (
-    <>
+    <div className="global">
     <Header type="professor"/>
          <div className="containerNotas">
         <div className="headerNotas">
@@ -92,7 +93,7 @@ const DeclaracaoNotas = () => {
             
         </div>
     </div>
-    </>
+    </div>
   )
 }
 

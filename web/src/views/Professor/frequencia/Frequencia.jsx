@@ -7,7 +7,7 @@ import Header from "../../../components/Header/Header"
 import "../../../styles/global.css"
 const Frequencia = () => {
   return (
-    <div className='containerBodyFrequencia'>
+    <div className='global'>
     <Header type="professor" className="headerFrequencia"/>
     <div className='teste2'>
      <div className="containerChamada">
@@ -109,6 +109,7 @@ const Frequencia = () => {
         </div>
     </div>
     </div>
+   
   )
 }
 

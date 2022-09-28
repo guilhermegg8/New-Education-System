@@ -1,9 +1,9 @@
 import Header from '../../../components/Header/Header'
 import "./Tarefas.css"
-
+import "../../../styles/global.css"
 const Tarefas = () => {
   return (
-    <>
+    <div className='global'>
     
        <Header type="professor" className="headerTarefas"/>
 
@@ -127,7 +127,7 @@ const Tarefas = () => {
 
 
 
-    </>
+    </div>
   )
 }
 
