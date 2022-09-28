@@ -59,7 +59,7 @@ export default function Login() {
 
         } else {
             alert("Login realizado com sucesso");
-            navigate("/professor/perfil");
+            navigate("/professor/home");
             // navigate("/professor/declaracao-notas");
             // navigate("/professor/frequencia");
         }
@@ -99,12 +99,12 @@ export default function Login() {
 
                         <div className='input-field'>
                             <FaUser className='icon' />
-                            <input type='text' placeholder='Usuário' onChange={(e) => setNameProfessor(e.target.value)}/>
+                            <input type='text' placeholder='Usuário' onChange={(e) => setNameProfessor(e.target.value)} />
                         </div>
 
                         <div className='input-field'>
                             <FaLock className='icon' />
-                            <input type='password' placeholder='Senha'  onChange={(e) => setPasswordProfessor(e.target.value)}/>
+                            <input type='password' placeholder='Senha' onChange={(e) => setPasswordProfessor(e.target.value)} />
                         </div>
                         <a className='form-a' href='#'>Esqueceu sua senha?</a>
                         <input type='submit' value='Login' className='btn solid' />

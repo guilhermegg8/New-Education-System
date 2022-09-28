@@ -1,6 +1,5 @@
 /*===== HEADER AND NAVIGATION =====*/
 header {
-  width: 20rem;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -33,6 +32,18 @@ header .accessibility .accessibility-link sup {
   font-size: 0.75rem;
   transition: color 0.2s;
 }
+header .accessibility #change-contrast.on .contrast {
+  border: 2px solid var(--contrast-dark);
+  padding: 0;
+}
+header .accessibility #change-contrast.on .contrast::before {
+  background-color: var(--contrast-dark);
+  border: none;
+  width: 0.75rem;
+  height: 1.5rem;
+  border-radius: 0 50% 50% 0;
+  transform: translateX(0.75rem);
+}
 header .accessibility #change-contrast .contrast {
   width: 1.75rem;
   height: 1.75rem;
@@ -52,18 +63,6 @@ header .accessibility #change-contrast .contrast::before {
   transition: transform 200ms;
   background-color: var(--black);
 }
-header .accessibility #change-contrast .contrast.on {
-  border: 2px solid #c7c700;
-  padding: 0;
-}
-header .accessibility #change-contrast .contrast.on::before {
-  background-color: #c7c700;
-  border: none;
-  width: 0.75rem;
-  height: 1.5rem;
-  border-radius: 0 50% 50% 0;
-  transform: translateX(0.75rem);
-}
 header .accessibility #change-contrast:hover .contrast {
   border: 2px solid var(--first-color-main);
 }
@@ -80,14 +79,32 @@ header .accessibility #change-contrast:hover .contrast.on::before {
 header .nav {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
+  gap: 2rem;
   height: 100vh;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
   /* By Peter Pool */
 }
 header .nav .nav-logo {
   width: 11rem;
-  content: url(../../assets/react.svg);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  content: url(../../assets/logo.png);
+}
+header .nav .nav-menu {
+  overflow-y: scroll;
+}
+header .nav .nav-menu::-webkit-scrollbar {
+  width: 3px;
+}
+header .nav .nav-menu::-webkit-scrollbar-track {
+  background: var(--theme-medium);
+}
+header .nav .nav-menu::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: 3px solid var(--theme-dark);
 }
 @media screen and (max-width: 1150px) {
   header .nav .nav-menu {
@@ -120,6 +137,7 @@ header .nav .nav-menu .nav-list {
   width: -moz-max-content;
   width: max-content;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 header .nav .nav-link {
   display: flex;
@@ -128,6 +146,20 @@ header .nav .nav-link {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+header .nav .nav-link.change-theme {
+  margin-top: 1rem;
+}
+header .nav .nav-link.change-theme.on .checkbox {
+  border: 2px solid var(--white);
+  padding: 0;
+}
+header .nav .nav-link.change-theme.on .checkbox::before {
+  background-color: var(--white);
+  border: none;
+  width: 1rem;
+  height: 1rem;
+  transform: translateX(0.75rem);
 }
 header .nav .nav-link.change-theme .checkbox {
   width: 2rem;
@@ -149,17 +181,6 @@ header .nav .nav-link.change-theme .checkbox::before {
           clip-path: circle();
   transition: transform 200ms;
   background-color: var(--black);
-}
-header .nav .nav-link.change-theme .checkbox.on {
-  border: 2px solid var(--white);
-  padding: 0;
-}
-header .nav .nav-link.change-theme .checkbox.on::before {
-  background-color: var(--white);
-  border: none;
-  width: 1rem;
-  height: 1rem;
-  transform: translateX(0.75rem);
 }
 header .nav .nav-link.change-theme:hover .checkbox {
   border: 2px solid var(--first-color-main);
