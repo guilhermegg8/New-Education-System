@@ -9,6 +9,7 @@ const Frequencia = () => {
   return (
     <div className='global'>
     <Header type="professor" className="headerFrequencia"/>
+    <main>
     <div className='teste2'>
      <div className="containerChamada">
             <div className="headerChamada">
@@ -108,6 +109,7 @@ const Frequencia = () => {
             </div>
         </div>
     </div>
+    </main>
     </div>
    
   )

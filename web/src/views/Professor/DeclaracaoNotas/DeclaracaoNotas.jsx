@@ -42,10 +42,10 @@ const DeclaracaoNotas = () => {
                         <label className="titulo_notas_trabalho" htmlFor="">T</label>
                     </div>
                     <div className="container_input_notas">
-                        <input className="input_text_notas" type="text" maxlength="1" />
-                        <input className="input_text_notas" type="text" maxlength="1" />
-                        <input className="input_text_notas" type="text" maxlength="1" />
-                        <input className="input_text_notas" type="text" maxlength="1" />
+                        <input className="input_text_notas" type="text" maxlength="3" />
+                        <input className="input_text_notas" type="text" maxlength="3" />
+                        <input className="input_text_notas" type="text" maxlength="3" />
+                        <input className="input_text_notas" type="text" maxlength="3" />
                     </div>
             </div>
             <div className="cardNotasAluno">
@@ -62,10 +62,10 @@ const DeclaracaoNotas = () => {
                         <label className="titulo_notas_trabalho" htmlFor="">T</label>
                     </div>
                     <div className="container_input_notas">
-                        <input className="input_text_notas" type="text" maxlength="1" />
-                        <input className="input_text_notas" type="text" maxlength="1" />
-                        <input className="input_text_notas" type="text" maxlength="1" />
-                        <input className="input_text_notas" type="text" maxlength="1" />
+                        <input className="input_text_notas" type="text" maxlength="3" />
+                        <input className="input_text_notas" type="text" maxlength="3" />
+                        <input className="input_text_notas" type="text" maxlength="3" />
+                        <input className="input_text_notas" type="text" maxlength="3" />
                     </div>
             </div>
             <div className="cardNotasAluno">
@@ -82,10 +82,10 @@ const DeclaracaoNotas = () => {
                         <label className="titulo_notas_trabalho" htmlFor="">T</label>
                     </div>
                     <div className="container_input_notas">
-                        <input className="input_text_notas" type="text" maxlength="1" />
-                        <input className="input_text_notas" type="text" maxlength="1" />
-                        <input className="input_text_notas" type="text" maxlength="1" />
-                        <input className="input_text_notas" type="text" maxlength="1" />
+                        <input className="input_text_notas" type="text" maxlength="3" />
+                        <input className="input_text_notas" type="text" maxlength="3" />
+                        <input className="input_text_notas" type="text" maxlength="3" />
+                        <input className="input_text_notas" type="text" maxlength="3" />
                     </div>
             </div>
            

@@ -1,232 +1,175 @@
-.containerNotas {
-  background-color: #23212e;
-  width: 800px;
-  height: 100%;
-  margin-left: 10%;
-  border-radius: 20px;
+
+
+.containerNotas{
+    background-color: var(--theme-dark);
+    width: 800px;
+    height: 100%;
+    margin-left: 10%;
+    border-radius: 20px;
+}
+.headerNotas{
+    display: flex;
+
+}
+label{
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    margin-top: 30px;
+}
+h2{
+    margin-left: 40px;
 }
 
-.headerNotas {
-  display: flex;
+.containerNotasAluno{
+    width: 800px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.cardNotasAluno{
+    background-color: var(--theme-main);
+    flex: 1 1 300px;
+    height: 120px;
+    margin:  10px 30px 10px 30px;
+    border-radius: 20px;
+    display: flex;
+
+}
+.cardNotasAluno img{
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 80px;
+    height: 65px;
+    
+    
 }
 
-label {
-  justify-content: right;
-  align-items: right;
-  text-align: right;
-  margin-top: 30px;
+input[type=date]{
+   
+
+
+    border: none;
+    background-color: #2561D1;
+    padding: 10px;
+    border-radius: 20px;
 }
 
-h2 {
-  margin-left: 40px;
+
+.handleEnviar{
+    margin-left: 10px;color: var(--title-forms); border: 2px solid #2A5ECA; background-color: transparent;  padding: 10px;
+                    border-radius: 20px; width: 150px;
+                    transition: 1s;
 }
-
-.containerNotasAluno {
-  width: 800px;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
+.handleEnviar:hover{
+    background-color: #2A5ECA;
 }
-
-.cardNotasAluno {
-  background-color: #2a2836;
-  flex: 1 1 300px;
-  height: 120px;
-  margin: 10px 30px 10px 30px;
-  border-radius: 20px;
-  display: flex;
+.titleFilterRa{
+    margin-left: 20px;
 }
-
-.cardNotasAluno img {
-  margin-top: 20px;
-  margin-left: 25px;
-  width: 80px;
-  height: 65px;
+.titleFilterAlfa{
+    margin-left: 35%;
 }
-
-input[type="date"] {
-  border: none;
-  background-color: #2561d1;
-  padding: 10px;
-  border-radius: 20px;
+.filter{
+    width: 10px; height: 15px; margin-top: 4%; margin-left: 10px;
+            
+    background-color: transparent; border: 1px solid #2A5ECA;
 }
-
-.handleEnviar {
-  margin-left: 10px;
-  color: white;
-  border: 2px solid #2a5eca;
-  background-color: transparent;
-  padding: 10px;
-  border-radius: 20px;
-  width: 150px;
+.handleTitleChamadaCurso{
+    float: left; margin-left: 40px; color: #2A5ECA;
 }
-
-.titleFilterRa {
-  margin-left: 20px;
+.containerSubHeadle{
+    padding-top: 20px; margin-left: 60%;
 }
-
-.titleFilterAlfa {
-  margin-left: 35%;
+.cardAluno{
+    margin-left: 20px;
 }
-
-.filter {
-  width: 10px;
-  height: 15px;
-  margin-top: 4%;
-  margin-left: 10px;
-
-  background-color: transparent;
-  border: 1px solid #2a5eca;
+.nomeAluno{
+    margin-bottom:-12px;
 }
-
-.handleTitleChamadaCurso {
-  float: left;
-  margin-left: 40px;
-  color: #2a5eca;
+.identrAluno{
+    margin-bottom: 10px;
 }
-
-.containerSubHeadle {
-  padding-top: 20px;
-  margin-left: 60%;
+.infosMais{
+    text-decoration: none; color: #2A5ECA;
 }
-
-.cardAluno {
-  margin-left: 20px;
+.cardButtonFaltou{
+    margin: 8% auto;
 }
-
-.nomeAluno {
-  margin-bottom: -12px;
+.btnFaltou{
+    width: 20px; height: 20px; border-radius: 50%; border: 2px solid #2A5ECA; background-color: transparent; margin: 25px 0px 0px 30%;
 }
-
-.identrAluno {
-  margin-bottom: 10px;
+.pFaltou{
+    margin-top: 5px;
 }
-
-.infosMais {
-  text-decoration: none;
-  color: #2a5eca;
+.input_text_notas{
+    color: var(--title-forms);
+    background-color: transparent;
+    width: 40px; height: 40px; text-align: center;border-radius: 50%; padding-left: 0; margin: 0px  20px 0px 0px;
+    border: 2px solid #2A5ECA;
+    font-size: 20px;
 }
-
-.cardButtonFaltou {
-  margin: 8% auto;
+.containerChamada{
+    margin-left: 25%; margin-right: 10%;
 }
-
-.btnFaltou {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 2px solid #2a5eca;
-  background-color: transparent;
-  margin: 25px 0px 0px 30%;
+.alfa_order{
+    margin-left: 35%;
 }
+.bt_alfa_order, .bt_ra_order{
+    width: 10px; height: 15px; margin-top: 4%; margin-left: 10px;
+    background-color: transparent; border: 1px solid #2A5ECA;
 
-.pFaltou {
-  margin-top: 5px;
+}.ra_order{
+    margin-left: 20px;
 }
-
-.input_text_notas {
-  color: white;
-  background-color: transparent;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  padding-left: 0;
-  margin: 0px 20px 0px 0px;
+.desc_curso_semestre{
+    margin: 30px;
+    float: left; margin-left: 40px; color: #2A5ECA;
 }
-
-.containerChamada {
-  margin-left: 25%;
-  margin-right: 10%;
+.container_data_enviar{
+    
+    padding-top: 20px; margin-left: 60%;
 }
-
-.alfa_order {
-  margin-left: 35%;
+.bt_enviar_nota{
+    margin-left: 10px;color: var(--title-forms);
+ background-color: transparent;  padding: 10px;
+        border-radius: 20px; width: 150px;
+        border:1px solid #2A5ECA;
 }
-
-.bt_alfa_order,
-.bt_ra_order {
-  width: 10px;
-  height: 15px;
-  margin-top: 4%;
-  margin-left: 10px;
-  background-color: transparent;
-  border: 1px solid #2a5eca;
+.bt_enviar_nota:hover{
+    transition: 1.5s;
+    background-color: #2A5ECA;
 }
-
-.ra_order {
-  margin-left: 20px;
+.txt_nome_do_aluno{
+    margin-top: 10px;
+    margin-bottom:-12px;
 }
-
-.desc_curso_semestre {
-  float: left;
-  margin-left: 40px;
-  color: #2a5eca;
+.txt_ra_aluno{
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
-
-.container_data_enviar {
-  padding-top: 20px;
-  margin-left: 60%;
+.link_mais_infos_aluno{
+    text-decoration: none; color: #2A5ECA;
 }
-
-.bt_enviar_nota {
-  margin-left: 10px;
-  color: white;
-  background-color: transparent;
-  padding: 10px;
-  border-radius: 20px;
-  width: 150px;
-  border: 1px solid white;
+.container_titulos_das_notas{
+    display: flex;
 }
-
-.bt_enviar_nota:hover {
-  transition: 1.5s;
-  background-color: #2a5eca;
+.titulo_notas_nota_um, .titulo_notas_nota_dois, .titulo_notas_nota_tres, .titulo_notas_trabalho{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-size: 20px;
 }
-
-.txt_nome_do_aluno {
-  margin-bottom: -12px;
+.titulo_notas_nota_um{
+    margin-left: 172%;
 }
-
-.txt_ra_aluno {
-  margin-top: 20px;
-  margin-bottom: 10px;
+.titulo_notas_nota_dois, .titulo_notas_nota_tres{
+    margin-left: 21%;
 }
-
-.link_mais_infos_aluno {
-  text-decoration: none;
-  color: #2a5eca;
+.titulo_notas_trabalho{
+    margin-left: 27%;
 }
-
-.container_titulos_das_notas {
-  display: flex;
-}
-
-.titulo_notas_nota_um,
-.titulo_notas_nota_dois,
-.titulo_notas_nota_tres,
-.titulo_notas_trabalho {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  font-size: 20px;
-}
-
-.titulo_notas_nota_um {
-  margin-left: 160%;
-}
-
-.titulo_notas_nota_dois,
-.titulo_notas_nota_tres {
-  margin-left: 19%;
-}
-
-.titulo_notas_trabalho {
-  margin-left: 27%;
-}
-
-.container_input_notas {
-  margin: 8% auto;
-  display: flex;
+.container_input_notas{
+    margin: 8% auto; display: flex;
 }

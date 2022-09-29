@@ -1,439 +1,426 @@
-.headerTarefas {
-  position: fixed;
-  top: 0%;
+.headerTarefas{
+    position: fixed;
+    top: 0%;
 }
+  
+  
+  .container-tarefas{
+       background-color: #23212e00;
+      width: 60%;
+      margin-left: 5%;
+      border-radius: 20px;
+   
+  }
+  .container-tarefas-flexivel{
+    display: flex;
+  }
+  
+  .info{
+    justify-content: space-between;
+    margin: 20px;
+    margin-top: 40px;
+    margin-left: 5rem;
+    display: flex;
+    top: 1rem;
+  position:Relative;  
+  Line-height: 3rem;
+  }
+   .turma{
 
-.container-tarefas {
-  background-color: #23212e00;
-  width: 60%;
-  margin-left: 10%;
-  border-radius: 20px;
-}
-
-.container-tarefas-flexivel {
-  display: flex;
-}
-
-.info {
-  justify-content: space-between;
-  margin: 20px;
-  margin-top: 40px;
-  margin-left: 5rem;
-  display: flex;
-  top: 1rem;
-  position: Relative;
-  line-height: 3rem;
-}
-
-.turma {
-  font-size: 12px;
-  color: #2a5eca;
-  font-weight: 600;
+    font-size: 12px;
+    color: #2A5ECA;
+     font-weight: 600;
   text-align: left;
   margin-left: 0px;
   margin-top: -20px;
+  }
+.containerTurma{
+    position: absolute;
+    margin-top: 300px;
 }
-
-.containerTurma {
-  position: absolute;
-  margin-top: 300px;
-}
-
-.cor {
-  color: #fff;
-}
-
-.title {
-  text-align: center;
-}
-
-.form {
-  background: #1b1a22;
-  padding: 40px;
-  max-width: 400px;
-  margin: 50px auto;
-  border-radius: 4px;
-  box-shadow: 0 4px 10px 4px #13232f4d;
-}
-
-.formularios {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 40px 0;
-}
-
-.formularios:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.formularios li a {
-  display: block;
-  text-decoration: none;
-  padding: 5px;
+  .cor{
+    color: var(--title-forms);
+  }
+  
+  .title{
+      text-align: center;  
+  }
+  
+  .form {
+    background: var(--theme-dark);
+    padding: 40px;
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px #13232f4d;
+  }
+  
+  .formularios {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+  
+  .formularios:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .formularios li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    color: #a0b3b0;
+    font-size: 15px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+     border: 2px solid #2A5ECA;
+  }
+  
+  .formularios li a:hover {
+    background: #2A5ECA;
+    border: 2px solid #2A5ECA;
+    color: #ffffff;
+  }
+  
+  .formularios .active a {
+    background: transparent;
+    border: 2px solid #2A5ECA;
+    color: #ffffff;
+  }
+  
+  .tab-content > div:last-child {
+    display: none;
+  }
+  
+  .sub-title {
+    text-align: center;
+    color: #2C64C1;
+    font-weight: 300;
+    margin: 0 0 40px;
+    font-size: 15px;;
+  }
+  
+  .campos-label {
+    position: absolute;
+    transform: translateY(6px);
+    left: 13px;
+    color: var(--title-forms);
+    transition: all 0.25s ease;
+    pointer-events: none;
+    font-size: 22px;
+  }
+  
+  .campos-label .req {
+    margin: 2px;
+    color: #1ab188;
+  }
+  
+  .campos-label.active {
+    transform: translateY(50px);
+    left: 2px;
+    font-size: 14px;
+  }
+  
+  .campos-label.active .req {
+    opacity: 0;
+  }
+  
+  .campos-label.highlight {
+    color: #ffffff;
+  }
+  
+  .form-input {
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background-color: var(--theme-light);
+    border: 1px solid #a0b3b0;
+    color: #ffffff;
+    border-radius: 0;
+  }
+  .form-input::placeholder{
+    color: var(--title-forms);
+  }
+  .form-input:focus {
+    outline: 0;
+    border-color: #1ab188;
+  }
+  
+  .campos {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .top-row > div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+  }
+  
+  .top-row > div:last-child {
+    margin: 0;
+  }
+  
+  .button {
+    border-radius: 0;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--title-forms);
+    transition: all 0.5s ease;
+    background: transparent;
+    margin-top: -30px;
+    border: 2px solid #2A5ECA
+  }
+  
+  .button:hover {
+    background: #2A5ECA;
+  }
+  
+  .button-block {
+    display: block;
+    width: 100%;
+  }
+  
+  #entrega{
+    position: relative;
+  }
+  
+  .form-input[type=datetime-local]{
+  color: var(--title-forms);
+  }
+  
+  .form-input[type=file]{
   color: #a0b3b0;
-  font-size: 15px;
-  float: left;
-  width: 50%;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.5s ease;
-  border: 2px solid #2a5eca;
-}
+  }
+  
+  .form-input[type=datetime-local]::-webkit-calendar-picker-indicator {
+  background-color: #2A5ECA;
+  }
+  
+  .envios{
 
-.formularios li a:hover {
-  background: #2a5eca;
-  border: 2px solid #2a5eca;
-  color: #ffffff;
-}
-
-.formularios .active a {
-  background: transparent;
-  border: 2px solid #2a5eca;
-  color: #ffffff;
-}
-
-.tab-content > div:last-child {
-  display: none;
-}
-
-.sub-title {
-  text-align: center;
-  color: #2c64c1;
-  font-weight: 300;
-  margin: 0 0 40px;
-  font-size: 15px;
-}
-
-.campos-label {
-  position: absolute;
-  transform: translateY(6px);
-  left: 13px;
-  color: #ffffff80;
-  transition: all 0.25s ease;
-  pointer-events: none;
-  font-size: 22px;
-}
-
-.campos-label .req {
-  margin: 2px;
-  color: #1ab188;
-}
-
-.campos-label.active {
-  transform: translateY(50px);
-  left: 2px;
-  font-size: 14px;
-}
-
-.campos-label.active .req {
-  opacity: 0;
-}
-
-.campos-label.highlight {
-  color: #ffffff;
-}
-
-.form-input {
-  font-size: 15px;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 5px 10px;
-  background: none;
-  background-image: none;
-  border: 1px solid #a0b3b0;
-  color: #ffffff;
-  border-radius: 0;
-}
-
-.form-input:focus {
-  outline: 0;
-  border-color: #1ab188;
-}
-
-.campos {
-  position: relative;
-  margin-bottom: 40px;
-}
-
-.top-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.top-row > div {
-  float: left;
-  width: 48%;
-  margin-right: 4%;
-}
-
-.top-row > div:last-child {
-  margin: 0;
-}
-
-.button {
-  border-radius: 0;
-  padding: 10px 0;
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-  transition: all 0.5s ease;
-  background: transparent;
-  margin-top: -30px;
-  border: 2px solid #2a5eca;
-}
-
-.button:hover {
-  background: #2a5eca;
-}
-
-.button-block {
-  display: block;
-  width: 100%;
-}
-
-#entrega {
-  position: relative;
-}
-
-.form-input[type="datetime-local"] {
-  color: #a0b3b0;
-}
-
-.form-input[type="file"] {
-  color: #a0b3b0;
-}
-
-.form-input[type="datetime-local"]::-webkit-calendar-picker-indicator {
-  background-color: #2a5eca;
-}
-
-.envios {
   position: relative;
   right: -6rem;
   line-height: 30%;
-}
-
-.FileList {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.FileList > li {
-  margin-bottom: 1rem;
-}
-
-.File {
-  border-radius: 4px;
-  display: inline-block;
-  line-height: 50%;
-  min-width: 15rem;
-  padding: 0.375rem;
-  background-color: #2a5eca;
-  color: #fff;
-  text-align: left;
-}
-
-.File:hover {
-  background-color: #7eaec8;
-}
-
-.fileinput[type="checkbox"] {
-  vertical-align: middle;
-}
-
-.fileinput {
-  display: inline;
-  width: 20%;
-}
-
-.change {
-  background-color: transparent;
-  height: 30px;
-  border-radius: 4px;
-  color: #a0b3b0;
-  padding: 6px 20px;
-  border: 2px solid #2a5eca;
-  cursor: pointer;
-  font-weight: 500;
-}
-
-.envios-text {
-  font-weight: 700;
-  text-align: center;
-  color: #2c64c1;
-  margin: 0 0 40px;
-}
-
-@media screen and (max-width: 900px) {
-  .envios {
-    position: relative;
-    right: 0rem;
-    line-height: 100%;
-    margin-left: 25%;
   }
-
+  
   .FileList {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
   }
-
   .FileList > li {
     margin-bottom: 1rem;
   }
-
+  
   .File {
     border-radius: 4px;
-    background-color: #2a5eca;
+    display: inline-block;
+    line-height: 50%;
+    min-width: 15rem;
+    padding: 0.375rem ;
+    background-color: #2A5ECA;
     color: #fff;
     text-align: left;
-    width: 10rem;
-    min-width: 5px;
   }
-
-  .turma {
-    font-size: 17px;
-    color: #2a5eca;
-    font-weight: 700;
-    text-align: left;
-    margin: 0;
+  .File:hover {
+    background-color: #7eaec8;
   }
-
-  .change {
-    background-color: transparent;
-    height: 25px;
-    border-radius: 4px;
-    width: 10rem;
-    color: #a0b3b0;
-    border: 2px solid #2a5eca;
-    cursor: pointer;
+  
+  .fileinput[type="checkbox"] {
+    vertical-align: middle;
+  }
+  .fileinput{
+  display: inline;
+  width: 20%; 
+  }
+  
+  .change{
+    background-color: var(--theme-dark);
+      height: 30px;
+      border-radius: 4px; 
+      color: var(--title-forms);
+      padding: 6px 20px;
+      border: 2px solid #2A5ECA;
+      cursor: pointer;
     font-weight: 500;
-    font-size: 12px;
-    margin: 5%;
   }
-
-  .info {
-    justify-content: space-between;
-    margin: 20px;
-    margin-left: 1rem;
-    display: flex;
-    top: 1rem;
-    position: Relative;
-    line-height: 2rem;
+  
+  .envios-text{
+  font-weight: 700;
+    text-align: center;
+    color: #2C64C1;
+    margin: 0 0 40px;
   }
-}
-
-@media screen and (max-width: 700px) {
-  .envios {
-    position: relative;
-    right: 0rem;
-    line-height: 100%;
+  
+  @media screen and (max-width: 900px) {
+  .envios{
+  position: relative;
+  right: 0rem;
+  line-height: 100%;
     margin-left: 25%;
   }
-
+  
+  .FileList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .FileList > li {
+    margin-bottom: 1rem;
+  }
+  
   .File {
     border-radius: 4px;
-    background-color: #2a5eca;
+    background-color: #2A5ECA;
     color: #fff;
     text-align: left;
     width: 10rem;
     min-width: 5px;
+  
   }
-
-  .turma {
+   .turma{
     font-size: 17px;
-    color: #2a5eca;
+    color: #2A5ECA;
     font-weight: 700;
     text-align: left;
     margin: 0;
   }
-
-  .change {
+    .change{
     background-color: transparent;
-    height: 25px;
-    border-radius: 4px;
-    width: 10rem;
-    color: #a0b3b0;
-    border: 2px solid #2a5eca;
-    cursor: pointer;
+      height: 25px;
+      border-radius: 4px; 
+      width: 10rem;
+      color: #a0b3b0;
+      border: 2px solid #2A5ECA;
+      cursor: pointer;
     font-weight: 500;
-    font-size: 12px;
-    margin: 5%;
+      font-size: 12px;
+      margin: 5%;
   }
-
-  .info {
+  .info{
     justify-content: space-between;
     margin: 20px;
     margin-left: 1rem;
     display: flex;
     top: 1rem;
-    position: Relative;
-    line-height: 2rem;
+  position:Relative;  
+  Line-height: 2rem;
   }
-}
-
-@media screen and (max-width: 650px) {
-  .envios {
-    position: relative;
-    right: 0rem;
-    line-height: 100%;
+  }
+  @media screen and (max-width: 700px) {
+  .envios{
+  position: relative;
+  right: 0rem;
+  line-height: 100%;
+    margin-left: 25%;
+  }
+  
+  .File {
+    border-radius: 4px;
+    background-color: #2A5ECA;
+    color: #fff;
+    text-align: left;
+    width: 10rem;
+    min-width: 5px;
+  
+  }
+   .turma{
+    font-size: 17px;
+    color: #2A5ECA;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+  }
+    .change{
+    background-color: transparent;
+      height: 25px;
+      border-radius: 4px; 
+      width: 10rem;
+      color: #a0b3b0;
+      border: 2px solid #2A5ECA;
+      cursor: pointer;
+    font-weight: 500;
+      font-size: 12px;
+      margin: 5%;
+  }
+  .info{
+    justify-content: space-between;
+    margin: 20px;
+    margin-left: 1rem;
+    display: flex;
+    top: 1rem;
+  position:Relative;  
+  Line-height: 2rem;
+  }
+  }
+  @media screen and (max-width: 650px) {
+  .envios{
+  position: relative;
+  right: 0rem;
+  line-height: 100%;
     margin-left: 0%;
     font-size: 14px;
   }
-
+  
   .File {
     border-radius: 4px;
-    background-color: #2a5eca;
+    background-color: #2A5ECA;
     color: #fff;
     text-align: left;
     width: 6rem;
     min-width: 5px;
-    height: 2rem;
+  height: 2rem;
     font-size: 10px;
   }
-
-  .File > input[type="checkbox"] {
+    .File > input[type="checkbox"] {
     vertical-align: middle;
-    height: 50%;
+      height: 50%
   }
-
-  .turma {
+   .turma{
     font-size: 14px;
-    color: #2a5eca;
+    color: #2A5ECA;
     font-weight: 700;
     text-align: left;
     margin: 0;
   }
-
-  .change {
+    .change{
     background-color: transparent;
-    height: 25px;
-    border-radius: 4px;
-    width: 6.5rem;
-    color: #a0b3b0;
-    border: 2px solid #2a5eca;
-    cursor: pointer;
+      height: 25px;
+      border-radius: 4px; 
+      width: 6.5rem;
+      color: #a0b3b0;
+      border: 2px solid #2A5ECA;
+      cursor: pointer;
     font-weight: 500;
-    font-size: 8px;
-    margin: 5%;
+      font-size: 8px;
+      margin: 5%;
   }
-
-  .info {
+  .info{
     justify-content: space-between;
     margin: 20px;
     margin-left: 1rem;
     display: flex;
     top: 1rem;
-    position: Relative;
-    line-height: 2rem;
+  position:Relative;  
+  Line-height: 2rem;
   }
-}
+  }

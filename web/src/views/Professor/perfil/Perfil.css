@@ -1,11 +1,11 @@
-@import "https://fonts.googleapis.com/css?family=Roboto";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 /* Perfil do usuario */
 .perfil {
   position: absolute;
-  margin-left: 10%;
-  margin-right: auto;
+    margin-left: 10%;
+    margin-right: auto;
   height: 25rem;
   width: 50rem;
   display: flex;
@@ -24,7 +24,7 @@
 .profile {
   font-size: 1.5rem;
   line-height: 1.7rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Conteudo do usuario */
@@ -36,11 +36,12 @@
 
 /* Tarefas */
 .tarefas {
-  background-color: #a4b0ff;
+ 
+  background-color: var(--theme-dark);
   border-radius: 24px;
   opacity: 0.8;
   position: absolute;
-  margin-top: 5%;
+  margin-top: 29%;
   width: 22rem;
   height: 14rem;
   right: 5rem;
