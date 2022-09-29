@@ -25,6 +25,7 @@ label{
     margin-top: 30px;
 }
 h2{
+    font-size: 20px;
     margin-top: 10px;
     margin-left: 40px;
 }
@@ -62,6 +63,7 @@ input[type=date]{
     background-color: #2561D1;
     padding: 10px;
     border-radius: 20px;
+    font-size: 10px;
 }
 
 input[type=checkbox]{
@@ -77,11 +79,12 @@ input[type=checkbox]{
 }
 .filter{
     margin-right: 10px;
-    width: 10px; height: 15px; margin-top: 4%; margin-left: 10px;
+    width: 15px; height: 10px; margin-top: 4%; margin-left: 10px;
             
     background-color: transparent; border: 1px solid #2A5ECA;
 }
 .handleTitleChamadaCurso{margin-top: 30px;
+    font-size: 15px;
     float: left; margin-left: 40px; color: #2A5ECA;
 }
 .containerSubHeadle{
@@ -91,7 +94,8 @@ input[type=checkbox]{
     margin-left: 20px;
 }
 .nomeAluno{
-    margin-top: 10px;
+    font-size: 15px;
+    margin-top: 15px;
     margin-bottom:-12px;
 }
 .identrAluno{

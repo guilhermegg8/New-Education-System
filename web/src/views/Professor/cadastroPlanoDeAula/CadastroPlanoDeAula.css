@@ -1,9 +1,11 @@
+
+    
 .bodyPlanoDeAula {
     font-family: 'Arial', sans-serif;
     font-weight: 300;
     line-height: 1.42em;
-    color: #A7A1AE;
       display: flex;
+
     /* background-image: url(imagem/Screenshot_13.png) ; */
   }
 
@@ -12,7 +14,7 @@
     width: 500px;
     height: 600px;
     text-align: center;
-    margin: 10% 10% 10% 10%;
+    margin: 5% 5% 0% 5%;
   
 }
 .formPlanoDeAula{
@@ -25,7 +27,7 @@
 }
 .input_text_plano, .submit_plano_aula{
     width: 350px;
-    margin: -20px  40px 0px 50px;
+    margin: 0px  40px 0px 50px;
     height: 40px;
    background-color: var(--theme-light);
    border: 1px solid #2A5ECA;
@@ -33,19 +35,21 @@
     border-radius: 20px;
     transition: 1s;
     color: var(--title-forms);
-    padding: 0px 0px 0px 10px;
 }
 .input_text_plano::placeholder{
     color: var(--title-forms);
 }
-
+.input_text_plano{
+    padding: 0px 0px 0px 10px;
+}
 .submit_plano_aula:hover{
     background-color: #2A5ECA;
     border: 1px solid black;
    
 }
 .submit_plano_aula{
-    margin: 20px 0px 60px 0px;
+    margin-top: 20px;
+    padding: 10px;
 }
 
 hr{
@@ -97,11 +101,12 @@ input[type=file]{
     height: 30px;
     background-color: var(--theme-light);
     border-radius: 20px; 
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     color: var(--title-forms);
     padding: 6px 20px;
     border: 1px solid #2A5ECA;
 }
 h1{
-    padding: 40px 0px 0px 0px; color: var(--title-forms); font-weight: bold;
+    font-size: 30px;
+     color: var(--title-forms); font-weight: bold;
 }

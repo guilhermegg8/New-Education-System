@@ -166,13 +166,13 @@ export default function Header({ type }) {
                             <>
 
                                 <li className="nav-item">
-                                    <a href="/professor/perfil" className="nav-link nav-link" title="Matrícula">
+                                    <a href="/professor/home" className="nav-link nav-link" title="Matrícula">
                                         <BsInfoCircle className="link-icon" />
                                         <span className="link-text">Perfil</span>
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link nav-link" title="Matrícula">
+                                    <a href="/professor/visualizar-turmas" className="nav-link nav-link" title="Matrícula">
                                         <BsSearch className="link-icon" />
                                         <span className="link-text">Visualizar Turmas</span>
                                     </a>

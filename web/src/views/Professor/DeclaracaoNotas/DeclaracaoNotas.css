@@ -61,6 +61,7 @@ input[type=date]{
     margin-left: 10px;color: var(--title-forms); border: 2px solid #2A5ECA; background-color: transparent;  padding: 10px;
                     border-radius: 20px; width: 150px;
                     transition: 1s;
+                    font-size: 10px;
 }
 .handleEnviar:hover{
     background-color: #2A5ECA;
@@ -124,7 +125,8 @@ input[type=date]{
     margin-left: 20px;
 }
 .desc_curso_semestre{
-    margin: 30px;
+    font-size: 15px;
+    margin-top: 30px;
     float: left; margin-left: 40px; color: #2A5ECA;
 }
 .container_data_enviar{
@@ -136,13 +138,15 @@ input[type=date]{
  background-color: transparent;  padding: 10px;
         border-radius: 20px; width: 150px;
         border:1px solid #2A5ECA;
+        font-size: 10px;
 }
 .bt_enviar_nota:hover{
     transition: 1.5s;
     background-color: #2A5ECA;
 }
 .txt_nome_do_aluno{
-    margin-top: 10px;
+    font-size: 15px;
+    margin-top: 20px;
     margin-bottom:-12px;
 }
 .txt_ra_aluno{

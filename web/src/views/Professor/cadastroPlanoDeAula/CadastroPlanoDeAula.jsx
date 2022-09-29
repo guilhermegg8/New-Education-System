@@ -56,7 +56,8 @@ const CadastroPlanoDeAula = () => {
                 <span id="file-name"></span>
         
             <hr />
-            <input className="submit_plano_aula" type="submit" value="Cadastrar"/>
+            <button className="submit_plano_aula">Cadastrar</button>
+        
         </form>
      </div>
     

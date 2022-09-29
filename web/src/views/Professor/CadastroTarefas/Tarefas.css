@@ -7,7 +7,6 @@
   .container-tarefas{
        background-color: #23212e00;
       width: 60%;
-      margin-left: 5%;
       border-radius: 20px;
    
   }
@@ -19,9 +18,7 @@
     justify-content: space-between;
     margin: 20px;
     margin-top: 40px;
-    margin-left: 5rem;
     display: flex;
-    top: 1rem;
   position:Relative;  
   Line-height: 3rem;
   }
@@ -31,15 +28,14 @@
     color: #2A5ECA;
      font-weight: 600;
   text-align: left;
-  margin-left: 0px;
-  margin-top: -20px;
   }
 .containerTurma{
     position: absolute;
     margin-top: 300px;
 }
   .cor{
-    color: var(--title-forms);
+    font-weight: bold;
+    color: var(--theme-dark);
   }
   
   .title{
@@ -50,7 +46,7 @@
     background: var(--theme-dark);
     padding: 40px;
     max-width: 400px;
-    margin: 50px auto;
+    margin: auto;
     border-radius: 4px;
     box-shadow: 0 4px 10px 4px #13232f4d;
   }
@@ -142,7 +138,7 @@
     padding: 5px 10px;
     background-color: var(--theme-light);
     border: 1px solid #a0b3b0;
-    color: #ffffff;
+    color: var(--title-forms);
     border-radius: 0;
   }
   .form-input::placeholder{
@@ -261,6 +257,7 @@
       border: 2px solid #2A5ECA;
       cursor: pointer;
     font-weight: 500;
+    font-size: 15px;
   }
   
   .envios-text{

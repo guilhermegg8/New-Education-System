@@ -9,7 +9,7 @@
   height: 25rem;
   width: 50rem;
   display: flex;
-  top: 20%;
+  top: 10%;
 }
 
 /* Imagem de perfil do usuario */
@@ -22,16 +22,17 @@
 
 /* Texto Conteudo Perfil do usuario */
 .profile {
-  font-size: 1.5rem;
   line-height: 1.7rem;
   font-family: 'Roboto', sans-serif;
 }
-
+.profile p{
+  font-size: 15px;
+}
 /* Conteudo do usuario */
 .Text-active {
   color: #2e4897;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 /* Tarefas */
