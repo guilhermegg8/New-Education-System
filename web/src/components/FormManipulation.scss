@@ -13,12 +13,26 @@
       border-radius: 0.5rem;
       width: 20rem;
       font-size: 1rem;
+      background: var(--white);
+
+      &#curso {
+        color: var(--black);
+      }
 
       &.button {
         background: var(--first-color-main);
         cursor: pointer;
         text-transform: none;
         margin-top: 0.5rem;
+        color: var(--white);
+
+        &.red {
+          background: #da0b0b;
+
+          &:hover {
+            background: #c12525;
+          }
+        }
 
         &:hover {
           background: var(--first-color-dark);

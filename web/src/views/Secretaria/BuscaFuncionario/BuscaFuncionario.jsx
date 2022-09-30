@@ -8,7 +8,7 @@ export default function BuscaFuncionario() {
         <div className="global">
             <Header type="secretaria" />
             <main>
-                <Container title="Consultar Funcionários" type="funcionario" section="consulta" />
+                <Container title="Consultar Funcionários" type="funcionario" section="tabela" />
             </main>
         </div>
     )

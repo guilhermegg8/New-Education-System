@@ -15,7 +15,20 @@ import CadastroPlanoDeAula from './views/Professor/CadastroPlanoDeAula/CadastroP
 import Tarefas from "./views/Professor/CadastroTarefas/Tarefas"
 import VisualizarTurmas from "./views/Professor/VisualizarTurmas/VisualizarTurmas"
 import DeclaracaoNotas from "./views/Professor/DeclaracaoNotas/DeclaracaoNotas"
+
 import BuscaFuncionario from "./views/Secretaria/BuscaFuncionario/BuscaFuncionario"
+import BuscaAluno from "./views/Secretaria/BuscaAluno/BuscaAluno"
+import BuscaDestaque from "./views/Secretaria/BuscaDestaque/BuscaDestaque"
+import BuscaCurso from "./views/Secretaria/BuscaCurso/BuscaCurso"
+import BuscaDisciplina from "./views/Secretaria/BuscaDisciplina/BuscaDisciplina"
+import BuscaSolicitacao from "./views/Secretaria/BuscaSolicitacao/BuscaSolicitacao"
+
+import UpdateSolicitacao from "./views/Secretaria/UpdateSolicitacao/UpdateSolicitacao"
+import UpdateFuncionario from "./views/Secretaria/UpdateFuncionario/UpdateFuncionario"
+import UpdateAluno from "./views/Secretaria/UpdateAluno/UpdateAluno"
+import UpdateDestaque from "./views/Secretaria/UpdateDestaque/UpdateDestaque"
+import UpdateCurso from "./views/Secretaria/UpdateCurso/UpdateCurso"
+import UpdateDisciplina from "./views/Secretaria/UpdateDisciplina/UpdateDisciplina"
 
 export default function Router() {
     return (
@@ -24,28 +37,39 @@ export default function Router() {
 
             <Route path="/aluno/matricula" element={<Matricula />} />
 
+            {/*========== ROTAS PARA SECRETARIA ==========*/}
             <Route path="/secretaria/home" element={<Home />} />
+
             <Route path="/secretaria/novo-funcionario" element={<NovoFuncionario />} />
             <Route path="/secretaria/busca-funcionario" element={<BuscaFuncionario />} />
-            <Route path="/secretaria/novo-aluno" element={<NovoAluno />} />
-            <Route path="/secretaria/busca-aluno" />
-            <Route path="/secretaria/solicitacoes" />
-            <Route path="/secretaria/novo-destaque" element={<NovoDestaque />} />
-            <Route path="/secretaria/busca-destaques" />
-            <Route path="/secretaria/novo-curso" element={<NovoCurso />} />
-            <Route path="/secretaria/busca-curso" />
-            <Route path="/secretaria/nova-disciplina" element={<NovaDisciplina />} />
-            <Route path="/secretaria/busca-disciplina" />
+            <Route path="/secretaria/update-funcionario" element={<UpdateFuncionario />} />
 
+            <Route path="/secretaria/novo-aluno" element={<NovoAluno />} />
+            <Route path="/secretaria/busca-aluno" element={<BuscaAluno />} />
+            <Route path="/secretaria/update-aluno" element={<UpdateAluno />} />
+
+            <Route path="/secretaria/solicitacoes" element={<BuscaSolicitacao />} />
+            <Route path="/secretaria/update-solicitacao" element={<UpdateSolicitacao />} />
+
+            <Route path="/secretaria/novo-destaque" element={<NovoDestaque />} />
+            <Route path="/secretaria/busca-destaques" element={<BuscaDestaque />} />
+            <Route path="/secretaria/update-destaque" element={<UpdateDestaque />} />
+
+            <Route path="/secretaria/novo-curso" element={<NovoCurso />} />
+            <Route path="/secretaria/busca-curso" element={<BuscaCurso />} />
+            <Route path="/secretaria/update-curso" element={<UpdateCurso />} />
+
+            <Route path="/secretaria/nova-disciplina" element={<NovaDisciplina />} />
+            <Route path="/secretaria/busca-disciplina" element={<BuscaDisciplina />} />
+            <Route path="/secretaria/update-disciplina" element={<UpdateDisciplina />} />
+
+            {/*========== ROTAS PARA PROFESSOR ==========*/}
             <Route path="/professor/frequencia" element={<Frequencia />} />
             <Route path="/professor/home" element={<Perfil />} />
             <Route path="/professor/plano-de-aula" element={<CadastroPlanoDeAula />} />
             <Route path="/professor/tarefas" element={<Tarefas />} />
             <Route path="/professor/visualizar-turmas" element={<VisualizarTurmas />} />
             <Route path="/professor/declaracao-notas" element={<DeclaracaoNotas />} />
-            
-            
         </Routes>
-
     )
 }

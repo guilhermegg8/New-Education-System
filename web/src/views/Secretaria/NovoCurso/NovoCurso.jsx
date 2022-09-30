@@ -8,7 +8,7 @@ export default function NovoCurso() {
         <div className="global">
             <Header type="secretaria" />
             <main>
-                <Container title="Novo Curso" type="curso" />
+                <Container title="Novo Curso" type="curso" section="formulario" />
             </main>
         </div>
     )

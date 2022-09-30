@@ -1,17 +1,71 @@
-main .dataTables_wrapper {
-  width: 100%;
+.dataTables_wrapper .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
 }
-main .dataTables_wrapper .row {
-  background-color: var(--theme-dark);
-  border-radius: 0;
-  width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+@media screen and (max-width: 630px) {
+  .dataTables_wrapper .top {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
-main .dataTables_wrapper .row.first {
-  border-radius: 5px 5px 0 0;
+.dataTables_wrapper .top .dataTables_info {
+  padding: 0;
+  font-weight: 600;
 }
-main .dataTables_wrapper .row.last {
-  border-radius: 0 0 5px 5px;
+.dataTables_wrapper .top .dataTables_filter {
+  margin: 0;
+}
+.dataTables_wrapper .top .dataTables_filter label {
+  font-weight: 600;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  align-items: center;
+}
+.dataTables_wrapper .top .dataTables_filter label input {
+  margin: 0;
+  border: none;
+  background: #fff;
+}
+.dataTables_wrapper .dataTables_scroll .dataTables_scrollHead,
+.dataTables_wrapper .dataTables_scroll .dataTables_scrollBody {
+  width: 40rem !important;
+}
+@media screen and (max-width: 1285px) {
+  .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead,
+.dataTables_wrapper .dataTables_scroll .dataTables_scrollBody {
+    width: 30rem !important;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead,
+.dataTables_wrapper .dataTables_scroll .dataTables_scrollBody {
+    width: 50rem !important;
+  }
+}
+@media screen and (max-width: 950px) {
+  .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead,
+.dataTables_wrapper .dataTables_scroll .dataTables_scrollBody {
+    width: 40rem !important;
+  }
+}
+@media screen and (max-width: 780px) {
+  .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead,
+.dataTables_wrapper .dataTables_scroll .dataTables_scrollBody {
+    width: 35rem !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead,
+.dataTables_wrapper .dataTables_scroll .dataTables_scrollBody {
+    width: 30rem !important;
+  }
+}
+@media screen and (max-width: 620px) {
+  .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead,
+.dataTables_wrapper .dataTables_scroll .dataTables_scrollBody {
+    width: 25rem !important;
+  }
 }/*# sourceMappingURL=Table.css.map */

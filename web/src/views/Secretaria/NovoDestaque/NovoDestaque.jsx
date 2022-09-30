@@ -8,7 +8,7 @@ export default function NovoDestaque() {
         <div className="global">
             <Header type="secretaria" />
             <main>
-                <Container title="Novo Destaque" type="destaque" />
+                <Container title="Novo Destaque" type="destaque" section="formulario" />
             </main>
         </div>
     )

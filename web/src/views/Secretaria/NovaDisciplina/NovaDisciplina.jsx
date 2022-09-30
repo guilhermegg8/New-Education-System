@@ -8,7 +8,7 @@ export default function NovaDisciplina() {
         <div className="global">
             <Header type="secretaria" />
             <main>
-                <Container title="Nova Disciplina" type="disciplina" />
+                <Container title="Nova Disciplina" type="disciplina" section="formulario" />
             </main>
         </div>
     )

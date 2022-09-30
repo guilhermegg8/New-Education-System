@@ -5,7 +5,7 @@
   --first-color-dark: hsl(var(--hue), 68%, 30%);
   --first-color-light: hsl(var(--hue), 68%, 70%);
   --theme-main: hsl(0, 0%, 90%);
-  --theme-medium: hsl(0, 0%, 90%);
+  --theme-medium: hsl(0, 0%, 85%);
   --theme-dark: hsl(0, 0%, 80%);
   --theme-light: hsl(0, 0%, 95%);
   --white: hsl(0, 100%, 100%);
@@ -43,6 +43,13 @@ body {
         --theme-light: hsl(249, 15%, 25%);
         color: var(--white);
 
+        .dataTables_wrapper {
+          .dataTables_info,
+          .dataTables_filter {
+            color: var(--white);
+          }
+        }
+
         a {
           color: var(--white);
         }
@@ -63,7 +70,7 @@ body {
       &.body-contrast {
         /* Constrast Theme Variables */
         --theme-main: hsl(0, 0%, 2.5%);
-        --theme-medium: hsl(0, 0, 3.5%);
+        --theme-medium: hsl(0, 0%, 3.5%);
         --theme-dark: hsl(0, 0%, 1.5%);
         --theme-light: hsl(0, 0%, 10%);
         background-color: #000;

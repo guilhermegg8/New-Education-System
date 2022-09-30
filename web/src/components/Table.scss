@@ -1,19 +1,66 @@
-main {
-  .dataTables_wrapper {
-    width: 100%;
+.dataTables_wrapper {
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
 
-    .row {
-      background-color: var(--theme-dark);
-      border-radius: 0;
-      width: 100%;
-      height: max-content;
+    @media screen and (max-width: 630px) {
+      flex-direction: column;
+      gap: 1rem;
+    }
 
-      &.first {
-        border-radius: 5px 5px 0 0;
+    .dataTables_info {
+      padding: 0;
+      font-weight: 600;
+    }
+
+    .dataTables_filter {
+      margin: 0;
+
+      label {
+        font-weight: 600;
+        display: flex;
+        gap: 1rem;
+        margin: 0;
+        align-items: center;
+
+        input {
+          margin: 0;
+          border: none;
+          background: #fff;
+        }
+      }
+    }
+  }
+
+  .dataTables_scroll {
+    .dataTables_scrollHead,
+    .dataTables_scrollBody {
+      width: 40rem !important;
+
+      @media screen and (max-width: 1285px) {
+        width: 30rem !important;
       }
 
-      &.last {
-        border-radius: 0 0 5px 5px;
+      @media screen and (max-width: 1150px) {
+        width: 50rem !important;
+      }
+
+      @media screen and (max-width: 950px) {
+        width: 40rem !important;
+      }
+
+      @media screen and (max-width: 780px) {
+        width: 35rem !important;
+      }
+
+      @media screen and (max-width: 700px) {
+        width: 30rem !important;
+      }
+
+      @media screen and (max-width: 620px) {
+        width: 25rem !important;
       }
     }
   }

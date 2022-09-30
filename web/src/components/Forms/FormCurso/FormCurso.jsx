@@ -24,7 +24,7 @@ export default function FormCurso() {
                     <option value="FatecSaoPaulo">Fatec São Paulo</option>
                     <option value="FatecMogiDasCruzes">Fatec Mogi das Cruzes</option>
                 </select>
-
+                <div></div>
                 <button type="submit" className="input button">Cadastrar</button>
             </div>
         </form>
