@@ -29,6 +29,10 @@ import UpdateAluno from "./views/Secretaria/UpdateAluno/UpdateAluno"
 import UpdateDestaque from "./views/Secretaria/UpdateDestaque/UpdateDestaque"
 import UpdateCurso from "./views/Secretaria/UpdateCurso/UpdateCurso"
 import UpdateDisciplina from "./views/Secretaria/UpdateDisciplina/UpdateDisciplina"
+import Consultas from "./views/Aluno/Consultas/Consultas"
+import Agenda from "./views/Aluno/Agenda/Agenda"
+import Solicitacoes from "./views/Aluno/Solicitacoes/Solicitacoes"
+import PlanoEnsino from "./views/Aluno/PlanoEnsino/PlanoEnsino"
 
 export default function Router() {
     return (
@@ -36,6 +40,10 @@ export default function Router() {
             <Route path="/" element={<Login />} />
 
             <Route path="/aluno/matricula" element={<Matricula />} />
+            <Route path="/aluno/consultas" element={<Consultas />} />
+            <Route path="/aluno/agenda" element={<Agenda />} />
+            <Route path="/aluno/solicitacoes" element={<Solicitacoes />} />
+            <Route path="/aluno/plano-ensino" element={<PlanoEnsino />} />
 
             {/*========== ROTAS PARA SECRETARIA ==========*/}
             <Route path="/secretaria/home" element={<Home />} />

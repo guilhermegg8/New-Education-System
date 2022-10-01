@@ -1,0 +1,244 @@
+main.aluno {
+  display: grid;
+  gap: 2.5rem;
+}
+main.aluno .content {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+main.aluno .content.content-2 {
+  display: grid;
+  border-radius: 1rem;
+  gap: 2rem;
+  padding: 2.5rem 3.5rem;
+  background: var(--theme-main);
+}
+main.aluno .content.content-2 .horarios {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+}
+main.aluno .content.content-2 .horarios > div {
+  display: grid;
+  gap: 0.5rem;
+}
+main.aluno .content.content-2 .horarios > div * {
+  margin: 0;
+  padding: 0;
+}
+main.aluno .content.content-2 .horarios > div ul {
+  list-style: none;
+}
+main.aluno .content.content-2 .horarios > div .dia {
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.25rem;
+}
+main.aluno .content.content-2 .horarios > div .quadro {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0.85rem;
+  background: var(--theme-light);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+main.aluno .content.content-2 .horarios > div .quadro li:nth-child(1) {
+  margin-bottom: 1rem;
+  color: var(--first-color-main);
+}
+main.aluno .content.content-2 .horarios > div .quadro .materia {
+  color: var(--first-color-main);
+}
+main.aluno .content.content-2 .horarios > div .quadro b {
+  font-weight: 500;
+}
+main.aluno .content.content-2 .content-title {
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  font-weight: 600;
+}
+main.aluno .content.content-2 .calendar {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  font-weight: 300;
+}
+main.aluno .content.content-2 .calendar.calendar-2 {
+  grid-template-columns: auto;
+}
+main.aluno .content.content-2 .calendar.calendar-2 .calendar-info .info-test {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem 3rem;
+}
+main.aluno .content.content-2 .calendar.calendar-2 .calendar-info .submit-link {
+  color: var(--first-color-main) !important;
+  font-weight: 500;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  align-self: flex-end;
+}
+@media screen and (max-width: 1425px) {
+  main.aluno .content.content-2 .calendar {
+    grid-template-columns: 1fr;
+  }
+}
+main.aluno .content.content-2 .calendar .calendar-info {
+  background: var(--theme-light);
+  padding: 1rem;
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  border-radius: 1rem;
+  justify-content: space-between;
+}
+main.aluno .content.content-2 .calendar .calendar-info * {
+  margin: 0;
+}
+main.aluno .content.content-2 .calendar .calendar-info b {
+  color: var(--first-color-main);
+  font-weight: 600;
+}
+@media screen and (max-width: 1050px) {
+  main.aluno .content {
+    flex-direction: column;
+  }
+}
+main.aluno .content .content-info {
+  display: grid;
+  background: var(--theme-main);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+main.aluno .content .content-info .content-title {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+main.aluno .content .content-info .content-user {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main.aluno .content .content-info .content-user .user-img {
+  align-self: center;
+  width: 12.5rem;
+}
+main.aluno .content .content-info .content-user .info-user .info-user-text {
+  margin: 0;
+}
+main.aluno .content .content-info .content-user .info-user .info-user-text b {
+  font-weight: 500;
+}
+main.aluno .content .content-office {
+  display: grid;
+  border-radius: 1rem;
+  gap: 1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: var(--theme-main);
+}
+main.aluno .content .content-office .office-title {
+  background-color: var(--theme-dark);
+  border-radius: 1rem 1rem 0 0;
+  padding: 1rem;
+  text-align: center;
+}
+main.aluno .content .content-office .office-title .office-title-text {
+  font-weight: 600;
+}
+main.aluno .content .content-office .office-text {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+main.aluno .content .content-office .office-text span {
+  display: grid;
+}
+main.aluno .content .content-office .office-footer {
+  background-color: var(--theme-dark);
+  border-radius: 0 0 1rem 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+main.aluno .content .profile {
+  display: grid;
+  gap: 1.5rem;
+  background-color: var(--theme-main);
+  padding: 4rem;
+  border-radius: 1rem;
+  position: relative;
+}
+main.aluno .content .profile .modal {
+  display: none;
+  overflow: hidden;
+  opacity: 0;
+}
+main.aluno .content .profile .profile-options {
+  display: flex;
+  gap: 2.5rem;
+}
+main.aluno .content .profile .profile-options .profile-img {
+  width: 6.25rem;
+}
+main.aluno .content .profile .profile-options .profile-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+main.aluno .content .profile .profile-info {
+  display: grid;
+  gap: 1rem;
+}
+main.aluno .content .profile .profile-info h2 {
+  font-weight: 600;
+  margin: 0;
+  font-size: 1.5rem;
+}
+main.aluno .content .profile .profile-info .info-course {
+  display: grid;
+  gap: 0.5rem;
+}
+main.aluno .content .profile .profile-info .info-course .info-course-title {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+main.aluno .content .profile .profile-info .info-course div p {
+  margin: 0;
+}
+main.aluno .content .profile .profile-info .info-course div p b {
+  font-weight: 400;
+}
+main.aluno .content .options {
+  display: grid;
+  gap: 2rem;
+  background: var(--theme-main);
+  border-radius: 1rem;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+main.aluno .content .options .options-container {
+  display: grid;
+  text-align: center;
+}
+main.aluno .content .options .options-container .options-title {
+  display: flex;
+  font-size: 1.25rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+main.aluno .content .options .options-container .options-title i {
+  font-size: 1.5rem;
+}
+main.aluno .important-announcement {
+  display: grid;
+  gap: 0.5rem;
+  color: var(--first-color-main);
+}/*# sourceMappingURL=Main.css.map */

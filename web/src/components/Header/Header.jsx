@@ -39,19 +39,19 @@ export default function Header({ type }) {
                         {type === "aluno" ? (
                             <>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link nav-link" title="Matrícula">
+                                    <a href="/aluno/matricula" className="nav-link nav-link" title="Matrícula">
                                         <BsInfoCircle className="link-icon" />
                                         <span className="link-text">Matrícula</span>
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link" title="Consultas">
+                                    <a href="/aluno/consultas" className="nav-link" title="Consultas">
                                         <BsSearch className="link-icon" />
                                         <span className="link-text">Consultas</span>
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link" title="Agenda">
+                                    <a href="/aluno/agenda" className="nav-link" title="Agenda">
                                         <BsCalendar4 className="link-icon" />
                                         <span className="link-text">Agenda</span>
                                     </a>
@@ -63,7 +63,7 @@ export default function Header({ type }) {
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link" title="Solicitações">
+                                    <a href="/aluno/solicitacoes" className="nav-link" title="Solicitações">
                                         <BsChatSquareText className="link-icon" />
                                         <span className="link-text">Solicitações</span>
                                     </a>
@@ -75,7 +75,7 @@ export default function Header({ type }) {
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link" title="Plano de Ensino">
+                                    <a href="/aluno/plano-ensino" className="nav-link" title="Plano de Ensino">
                                         <BsBook className="link-icon" />
                                         <span className="link-text">Plano de Ensino</span>
                                     </a>
